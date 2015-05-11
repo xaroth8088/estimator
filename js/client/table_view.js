@@ -27,6 +27,7 @@ var TableView = new JS.Class({
             connectWith: ".column .container",
             cursor: "move",
             containment: "window",
+            tolerance: "pointer",
             stop: $.proxy(this.onSortStop, this)
         });
     },
