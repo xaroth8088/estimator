@@ -56,7 +56,8 @@ var TableView = new JS.Class({
 
         card = {
             'title': title,
-            'card_id': card_id
+            'card_id': card_id,
+            'move_count': 0
         };
 
         new_card_input.val('');
@@ -69,12 +70,14 @@ var TableView = new JS.Class({
     },
 
     onSortStop: function (event) {
-        var card_id, new_column_id, card;
+        var card_id, new_column_id, card, card_view;
 
-        card_id = $(event.toElement).attr('card_id')
-        new_column_id = $(event.toElement).parent().parent().attr('value');
+        card_view = $(event.toElement).parents('.card');
+
+        card_id = card_view.attr('card_id');
+        new_column_id = card_view.parents('.column').attr('value');
         card = this.card_views[card_id].card_data;
-        this.card_views[card_id].highlightMove();
+        card.move_count++;
 
         this.card_state.onCardMoved(card, new_column_id);
     },
@@ -86,6 +89,9 @@ var TableView = new JS.Class({
         card_view.container.remove();
 
         $(".column[value='" + new_column_id + "'] .container").append(card_view.container);
+
+        card_view.card_data = card;
+        card_view.draw();
         card_view.highlightMove();
     }
 });

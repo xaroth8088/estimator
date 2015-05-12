@@ -112,7 +112,10 @@ var CardState = new JS.Class({
             }
         }
 
+        // Put it in the new column
         this.state[new_column_id][card.card_id] = card;
+
+        // Update the view
         this.table_view.moveCard(card, new_column_id);
     },
 

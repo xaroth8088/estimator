@@ -58,3 +58,9 @@ body {
 .text_new_card {
     width: 30em;
 }
+
+.move_count {
+    text-align: right;
+    background-color: #eee;
+    padding: 0.1em;
+}
