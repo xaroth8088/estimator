@@ -8,6 +8,8 @@ var TableView = new JS.Class({
     initial_draw: function () {
         var column_id, column_data, card_id;
 
+        $(".column .container").empty();
+
         for (column_id in this.card_state.state) {
             if (this.card_state.state.hasOwnProperty(column_id)) {
                 column_data = this.card_state.state[column_id];
@@ -23,6 +25,7 @@ var TableView = new JS.Class({
         // Attach events, controls, etc.
         $(".text_new_card_form").submit($.proxy(this.onNewCardClicked, this));
         $(".button_new_card").click($.proxy(this.onNewCardClicked, this));
+        $(".button_clear_board").click($.proxy(this.onClearBoardClicked, this));
         $(".column .container").sortable({
             connectWith: ".column .container",
             cursor: "move",
@@ -93,5 +96,14 @@ var TableView = new JS.Class({
         card_view.card_data = card;
         card_view.draw();
         card_view.highlightMove();
+    },
+
+    onClearBoardClicked: function() {
+        this.card_state.clearBoard();
+    },
+
+    onClearBoard: function() {
+        this.card_views = {};
+        this.initial_draw();
     }
 });

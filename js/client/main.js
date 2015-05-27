@@ -2,6 +2,14 @@
 var CardState = new JS.Class({
     initialize: function () {
         this.session = null;
+        this._initState();
+        this.initial_timeout = null;
+        this.subscription_set_initial_state = null;
+        this.table_view = null;
+        this.default_column = '?';
+    },
+
+    _initState: function() {
         this.state = {
             '1': {},
             '2': {},
@@ -13,10 +21,6 @@ var CardState = new JS.Class({
             '?': {},
             'inf': {}
         };
-        this.initial_timeout = null;
-        this.subscription_set_initial_state = null;
-        this.table_view = null;
-        this.default_column = '?';
     },
 
     'start': function () {
@@ -135,6 +139,14 @@ var CardState = new JS.Class({
             $.proxy(this._onSubscribeToSetInitialStateFailed, this)
         );
 
+        this.session.subscribe(
+            "com.wikia.estimator.clear_board",
+            $.proxy(this._onClearBoard, this)
+        ).then(
+            $.proxy(this._onSubscribeToClearBoardSuccess, this),
+            $.proxy(this._onSubscribeToClearBoardError, this)
+        );
+
         // We may be the first person in, in which case we should wait a few seconds before setting up
         this.initial_timeout = setTimeout($.proxy(this._onSetInitialState, this, [this.state]), 5000);
     },
@@ -160,6 +172,24 @@ var CardState = new JS.Class({
     onCardMoved: function(card, new_column_id) {
         this._onMoveCard([card, new_column_id])
         this.session.publish("com.wikia.estimator.move_card", [card, new_column_id]);
+    },
+
+    clearBoard: function() {
+        this.session.publish("com.wikia.estimator.clear_board");
+        this._onClearBoard();
+    },
+
+    _onClearBoard: function() {
+        this._initState();
+        this.table_view.onClearBoard();
+    },
+
+    _onSubscribeToClearBoardSuccess: function() {
+        // Intentionally do nothing
+    },
+
+    _onSubscribeToClearBoardError: function(error) {
+        console.log("Unable to subscribe to clear board event:" + error);
     }
 });
 
