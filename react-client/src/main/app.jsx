@@ -2,16 +2,16 @@ import React, { Component, PropTypes } from "react"
 import { connect } from 'react-redux'
 import Estimator from "../components/estimator/estimator.jsx"
 
-class App extends Component {
+var App = React.createClass({
     render() {
         // Injected by connect() call:
         const { dispatch, cards, columns } = this.props;
 
         return (
-            <Estimator cards={cards} columns={columns} />
+            <Estimator cards={cards} columns={columns} dispatch={dispatch}/>
         );
     }
-}
+});
 
 // Which props do we want to inject, given the global state?
 // TODO: use https://github.com/faassen/reselect for better performance.
@@ -22,4 +22,4 @@ function select(state) {
     }
 }
 
-export default connect(select)(App);
+export default connect(select)(App)

@@ -4,7 +4,7 @@ import "./card.css"
 export default React.createClass({
     render() {
         return (
-            <div>
+            <div className="card">
                 {this.props.card.title}
             </div>
         );

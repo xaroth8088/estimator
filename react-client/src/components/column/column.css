@@ -16,10 +16,15 @@
     flex-shrink: 0;
 }
 
-.column > .column-card {
-    min-height: 10em;
-    max-height: 20em;
-    overflow: auto;
+.column > .column-body > .column-card {
+    min-height: 7em;
+    max-height: 7em;
+    margin: 0.5em 0;
+    display: flex;
+}
+
+.column > .column-body > .column-card > .card {
+    flex: 1;
 }
 
 .column > .column-body {

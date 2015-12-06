@@ -9,9 +9,7 @@ const initialState = {
         5: [],
         8: [],
         13: [],
-        21: [],
-        '?': [],
-        'inf': []
+        '?': []
     },
     cards: {},
     card_id_counter: 0
@@ -20,8 +18,8 @@ const initialState = {
 function reduceAddCard(state, payload) {
     var new_state, card_id;
 
-    // Copy the old state
-    new_state = Object.assign({}, state);
+    // Deep copy the old state
+    new_state = JSON.parse(JSON.stringify(state));  // TODO: use the Immutable library instead
 
     // Get the new card_id
     card_id = new_state.card_id_counter;
@@ -44,7 +42,7 @@ function reduceMoveCard(state, payload) {
     var new_state;
 
     // Copy the old state
-    new_state = Object.assign({}, state);
+    new_state = JSON.parse(JSON.stringify(state));
 
     // Remove the card_id from all columns
     removeFromAllColumns(new_state.columns, payload.card_id);
@@ -60,7 +58,7 @@ function reduceDeleteCard(state, payload) {
     var new_state;
 
     // Copy the old state
-    new_state = Object.assign({}, state);
+    new_state = JSON.parse(JSON.stringify(state));
 
     // Remove the card_id from all columns
     removeFromAllColumns(new_state.columns, payload.card_id);

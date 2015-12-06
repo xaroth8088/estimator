@@ -5,13 +5,16 @@ export default React.createClass({
     render() {
         return (
             <div>
-                <input ref="value" placeholder="Enter card text" />
-                <button onClick={this.onCreateClicked}>Make it!</button>
+                <form action="">
+                    <input ref="card_title" placeholder="Enter card text" />
+                    <button onClick={this.onCreateClicked}>Make it!</button>
+                </form>
             </div>
         );
     },
 
     onCreateClicked() {
-        alert('click!');
+        this.props.onCreateCard(this.refs.card_title.value);
+        this.refs.card_title.value = "";
     }
 });
