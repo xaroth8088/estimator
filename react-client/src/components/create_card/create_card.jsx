@@ -14,6 +14,10 @@ export default React.createClass({
     },
 
     onCreateClicked() {
+        if( this.refs.card_title.value === "" ) {
+            return;
+        }
+
         this.props.onCreateCard(this.refs.card_title.value);
         this.refs.card_title.value = "";
     }

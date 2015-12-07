@@ -1,4 +1,4 @@
-import { combineReducers } from 'redux'
+import { combineReducers, createStore } from 'redux'
 import { ADD_CARD, MOVE_CARD, DELETE_CARD } from "./actions.es6";
 
 const initialState = {
@@ -28,7 +28,8 @@ function reduceAddCard(state, payload) {
     // Create the new card
     new_state.cards[card_id] = {
         card_id: card_id,
-        title: payload.title
+        title: payload.title,
+        history: []
     };
 
     // Add the card to the ? column
@@ -49,6 +50,9 @@ function reduceMoveCard(state, payload) {
 
     // Add the card_id to the new column
     new_state.columns[payload.to_column].push(payload.card_id);
+
+    // Update its move history
+    new_state.cards[payload.card_id].history.push(payload.to_column);
 
     // Return the new state
     return new_state;
@@ -96,4 +100,4 @@ function cards(state = initialState, action) {
 
 const estimatorApp = combineReducers({cards});
 
-export default estimatorApp
+export default createStore(estimatorApp);

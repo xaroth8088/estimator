@@ -3,15 +3,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Router, Route, Link, Redirect } from 'react-router'
-import { createStore } from 'redux'
 import { Provider } from 'react-redux'
-import estimatorApp from '../reducers.es6'
+import store from '../redux_store.es6'
 import App from "./app.jsx"
 
 import './main.css';
-
-// Create our store
-let store = createStore(estimatorApp);
 
 ReactDOM.render((
     <Provider store={store}>

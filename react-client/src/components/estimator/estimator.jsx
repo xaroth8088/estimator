@@ -3,9 +3,12 @@ import CreateCard from "../create_card/create_card.jsx"
 import Column from "../column/column.jsx"
 import { addCard, moveCard, deleteCard } from "../../actions.es6"
 
+import { DragDropContext } from 'react-dnd';
+import HTML5Backend from 'react-dnd-html5-backend';
+
 import "./estimator.css"
 
-export default React.createClass({
+var Estimator = React.createClass({
     render() {
         var columns, column_id;
 
@@ -32,3 +35,5 @@ export default React.createClass({
         );
     }
 });
+
+export default DragDropContext(HTML5Backend)(Estimator);

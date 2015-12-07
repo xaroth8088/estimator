@@ -3,4 +3,20 @@
     padding: 0.5em;
     border-radius: 0.5em;
     overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    flex: 1;
+}
+
+.card-move-count {
+    background-color: lightgray;
+    text-align: right;
+    padding: 0.25em;
+}
+
+.card-history {
+    display: none;
 }
