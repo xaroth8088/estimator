@@ -23,7 +23,7 @@ function collect(connect, monitor) {
 
 var Column = React.createClass({
     render() {
-        var card_id, cards;
+        var card_id, cards, column_class;
         const { connectDropTarget, isOver } = this.props;
 
         cards = [];
@@ -35,8 +35,13 @@ var Column = React.createClass({
             );
         }
 
+        column_class = "column";
+        if( isOver === true ) {
+            column_class += " hover";
+        }
+
         return connectDropTarget(
-            <div className="column" style={{ backgroundColor: isOver ? 'green' : 'transparent' }}>
+            <div className={column_class}>
                 <div className="column-header">
                     {this.props.column_id}
                 </div>

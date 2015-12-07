@@ -26044,7 +26044,7 @@
 	var Column = _react2.default.createClass({
 	    displayName: "Column",
 	    render: function render() {
-	        var card_id, cards;
+	        var card_id, cards, column_class;
 	        var _props = this.props;
 	        var connectDropTarget = _props.connectDropTarget;
 	        var isOver = _props.isOver;
@@ -26079,9 +26079,14 @@
 	            }
 	        }
 
+	        column_class = "column";
+	        if (isOver === true) {
+	            column_class += " hover";
+	        }
+
 	        return connectDropTarget(_react2.default.createElement(
 	            "div",
-	            { className: "column", style: { backgroundColor: isOver ? 'green' : 'transparent' } },
+	            { className: column_class },
 	            _react2.default.createElement(
 	                "div",
 	                { className: "column-header" },
@@ -26116,6 +26121,12 @@
 
 	var _constants = __webpack_require__(318);
 
+	var _redux_store = __webpack_require__(350);
+
+	var _redux_store2 = _interopRequireDefault(_redux_store);
+
+	var _actions = __webpack_require__(226);
+
 	__webpack_require__(236);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -26137,15 +26148,36 @@
 
 	var Card = _react2.default.createClass({
 	    displayName: 'Card',
+	    getInitialState: function getInitialState() {
+	        return {
+	            show_history: false
+	        };
+	    },
 	    render: function render() {
+	        var card_class, history_class;
+
 	        var _props = this.props;
 	        var isDragging = _props.isDragging;
 	        var connectDragSource = _props.connectDragSource;
 	        var card = _props.card;
 
+	        card_class = "card";
+	        if (isDragging === true) {
+	            card_class += " dragging";
+	        }
+
+	        if (this.props.card.history.length > 5) {
+	            card_class += " warning";
+	        }
+
+	        history_class = "card-history";
+	        if (this.state.show_history === false) {
+	            history_class += " hidden";
+	        }
+
 	        return connectDragSource(_react2.default.createElement(
 	            'div',
-	            { className: 'card', style: { opacity: isDragging ? 0.5 : 1 } },
+	            { className: card_class },
 	            _react2.default.createElement(
 	                'div',
 	                { className: 'card-title' },
@@ -26153,15 +26185,32 @@
 	            ),
 	            _react2.default.createElement(
 	                'div',
-	                { className: 'card-move-count' },
+	                { className: 'card-delete-button' },
+	                _react2.default.createElement(
+	                    'button',
+	                    { onClick: this.onDeleteClicked },
+	                    'Delete'
+	                )
+	            ),
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'card-move-count', onClick: this.onShowHistoryClicked },
 	                card.history.length
 	            ),
 	            _react2.default.createElement(
 	                'div',
-	                { className: 'card-history' },
-	                card.history.join(',')
+	                { className: history_class },
+	                card.history.join(', ')
 	            )
 	        ));
+	    },
+	    onDeleteClicked: function onDeleteClicked() {
+	        _redux_store2.default.dispatch((0, _actions.deleteCard)(this.props.card.card_id));
+	    },
+	    onShowHistoryClicked: function onShowHistoryClicked() {
+	        this.setState({
+	            show_history: !this.state.show_history
+	        });
 	    }
 	});
 
@@ -26206,7 +26255,7 @@
 
 
 	// module
-	exports.push([module.id, ".card {\n    border: 1px solid black;\n    padding: 0.5em;\n    border-radius: 0.5em;\n    overflow: auto;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-flex-direction: column;\n    -ms-flex-direction: column;\n    flex-direction: column;\n}\n\n.card-title {\n    -webkit-flex: 1;\n    -ms-flex: 1;\n    flex: 1;\n}\n\n.card-move-count {\n    background-color: lightgray;\n    text-align: right;\n    padding: 0.25em;\n}\n\n.card-history {\n    display: none;\n}", ""]);
+	exports.push([module.id, ".card {\n    border: 1px solid black;\n    padding: 0.5em;\n    border-radius: 0.5em;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-flex-direction: column;\n    -ms-flex-direction: column;\n    flex-direction: column;\n\n    -webkit-animation-name: pulse;\n\n    animation-name: pulse;\n    -webkit-animation-duration: 0.4s;\n    animation-duration: 0.4s;\n    -webkit-animation-iteration-count: 1;\n    animation-iteration-count: 1;\n    -webkit-animation-timing-function: ease-in-out;\n    animation-timing-function: ease-in-out;\n}\n\n@-webkit-keyframes pulse {\n    0% {\n        background-color: orange;\n    }\n    100% {\n        background-color: rgba(255, 255, 255, 0);\n    }\n}\n\n@keyframes pulse {\n    0% {\n        background-color: orange;\n    }\n    100% {\n        background-color: rgba(255, 255, 255, 0);\n    }\n}\n\n.card-title {\n    -webkit-flex: 1;\n    -ms-flex: 1;\n    flex: 1;\n    overflow: auto;\n}\n\n.card-move-count {\n    background-color: lightgray;\n    padding: 0.25em;\n    -webkit-flex-shrink: 0;\n    -ms-flex-negative: 0;\n    flex-shrink: 0;\n}\n\n.card-history {\n    -webkit-flex-shrink: 0;\n    -ms-flex-negative: 0;\n    flex-shrink: 0;\n}\n\n.card-history.hidden {\n    display: none;\n}\n\n.card-delete-button {\n    text-align: right;\n    display: inline;\n    position: relative;\n    height: 0;\n    top: 0.2em;\n    left: -0.2em;\n    -webkit-flex-shrink: 0;\n    -ms-flex-negative: 0;\n    flex-shrink: 0;\n}\n\n.card.dragging {\n    opacity: 0.5;\n    background-color: lightblue;\n}\n\n.card.warning {\n    background-color: pink;\n    -webkit-animation-name: pulse-warning;\n    animation-name: pulse-warning;\n}\n\n@-webkit-keyframes pulse-warning {\n    0% {\n        background-color: orange;\n    }\n    100% {\n        background-color: pink;\n    }\n}\n\n@keyframes pulse-warning {\n    0% {\n        background-color: orange;\n    }\n    100% {\n        background-color: pink;\n    }\n}", ""]);
 
 	// exports
 
@@ -26250,7 +26299,7 @@
 
 
 	// module
-	exports.push([module.id, ".column {\n    -webkit-flex: 1;\n    -ms-flex: 1;\n    flex: 1;\n\n    display: -webkit-flex;\n\n    display: -ms-flexbox;\n\n    display: flex;\n    -webkit-flex-direction: column;\n    -ms-flex-direction: column;\n    flex-direction: column;\n}\n\n.column > .column-header {\n    padding: 0.5em;\n    background-color: lightgray;\n    color: black;\n    border: 1px solid black;\n    width: 100%;\n    text-align: center;\n    font-weight: bold;\n    -webkit-flex-shrink: 0;\n    -ms-flex-negative: 0;\n    flex-shrink: 0;\n}\n\n.column > .column-body > .column-card {\n    min-height: 7em;\n    max-height: 7em;\n    margin: 0.5em 0;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n}\n\n.column > .column-body > .column-card > .card {\n    -webkit-flex: 1;\n    -ms-flex: 1;\n    flex: 1;\n}\n\n.column > .column-body {\n    -webkit-flex: 1;\n    -ms-flex: 1;\n    flex: 1;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-flex-direction: column;\n    -ms-flex-direction: column;\n    flex-direction: column;\n    border-left: 1px solid lightgray;\n    overflow: auto;\n}\n", ""]);
+	exports.push([module.id, ".column {\n    -webkit-flex: 1;\n    -ms-flex: 1;\n    flex: 1;\n\n    display: -webkit-flex;\n\n    display: -ms-flexbox;\n\n    display: flex;\n    -webkit-flex-direction: column;\n    -ms-flex-direction: column;\n    flex-direction: column;\n}\n\n.column > .column-header {\n    padding: 0.5em;\n    background-color: lightgray;\n    color: black;\n    border: 1px solid black;\n    width: 100%;\n    text-align: center;\n    font-weight: bold;\n    -webkit-flex-shrink: 0;\n    -ms-flex-negative: 0;\n    flex-shrink: 0;\n}\n\n.column > .column-body > .column-card {\n    min-height: 7em;\n    max-height: 7em;\n    margin: 0.5em 0;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n}\n\n.column > .column-body > .column-card > .card {\n    -webkit-flex: 1;\n    -ms-flex: 1;\n    flex: 1;\n}\n\n.column > .column-body {\n    -webkit-flex: 1;\n    -ms-flex: 1;\n    flex: 1;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-flex-direction: column;\n    -ms-flex-direction: column;\n    flex-direction: column;\n    border-left: 1px solid lightgray;\n    overflow: auto;\n}\n\n.column.hover {\n    background-color: lightgreen;\n}", ""]);
 
 	// exports
 

@@ -34,3 +34,7 @@
     border-left: 1px solid lightgray;
     overflow: auto;
 }
+
+.column.hover {
+    background-color: lightgreen;
+}
