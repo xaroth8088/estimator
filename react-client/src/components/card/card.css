@@ -67,3 +67,20 @@
         background-color: pink;
     }
 }
+
+.card.confirm_delete {
+    background-color: deeppink;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card .card-confirm-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.card .card-delete-button, .card .card-move-count {
+    flex-grow: 0;
+}

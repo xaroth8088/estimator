@@ -26134,7 +26134,8 @@
 	var cardSource = {
 	    beginDrag: function beginDrag(props) {
 	        return {
-	            card: props.card
+	            card: props.card,
+	            confirming_delete: false
 	        };
 	    }
 	};
@@ -26175,37 +26176,70 @@
 	            history_class += " hidden";
 	        }
 
-	        return connectDragSource(_react2.default.createElement(
-	            'div',
-	            { className: card_class },
-	            _react2.default.createElement(
+	        if (this.state.confirming_delete === true) {
+	            card_class += " confirm_delete";
+	            return _react2.default.createElement(
 	                'div',
-	                { className: 'card-title' },
-	                card.title
-	            ),
-	            _react2.default.createElement(
-	                'div',
-	                { className: 'card-delete-button' },
+	                { className: card_class },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'card-confirm-title' },
+	                    'Confirm Delete?'
+	                ),
 	                _react2.default.createElement(
 	                    'button',
-	                    { onClick: this.onDeleteClicked },
-	                    'Delete'
+	                    { onClick: this.onConfirmDeleteClicked, className: 'card-confirm-button' },
+	                    'Delete!'
+	                ),
+	                _react2.default.createElement(
+	                    'button',
+	                    { onClick: this.onCancelDeleteClicked, className: 'card-cancel-button' },
+	                    'Nevermind'
 	                )
-	            ),
-	            _react2.default.createElement(
+	            );
+	        } else {
+	            return connectDragSource(_react2.default.createElement(
 	                'div',
-	                { className: 'card-move-count', onClick: this.onShowHistoryClicked },
-	                card.history.length
-	            ),
-	            _react2.default.createElement(
-	                'div',
-	                { className: history_class },
-	                card.history.join(', ')
-	            )
-	        ));
+	                { className: card_class },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'card-title' },
+	                    card.title
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'card-delete-button' },
+	                    _react2.default.createElement(
+	                        'button',
+	                        { onClick: this.onDeleteClicked },
+	                        'Delete'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'card-move-count', onClick: this.onShowHistoryClicked },
+	                    card.history.length
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: history_class },
+	                    card.history.join(', ')
+	                )
+	            ));
+	        }
+	    },
+	    onConfirmDeleteClicked: function onConfirmDeleteClicked() {
+	        _redux_store2.default.dispatch((0, _actions.deleteCard)(this.props.card.card_id));
+	    },
+	    onCancelDeleteClicked: function onCancelDeleteClicked() {
+	        this.setState({
+	            confirming_delete: false
+	        });
 	    },
 	    onDeleteClicked: function onDeleteClicked() {
-	        _redux_store2.default.dispatch((0, _actions.deleteCard)(this.props.card.card_id));
+	        this.setState({
+	            confirming_delete: true
+	        });
 	    },
 	    onShowHistoryClicked: function onShowHistoryClicked() {
 	        this.setState({
@@ -26255,7 +26289,7 @@
 
 
 	// module
-	exports.push([module.id, ".card {\n    border: 1px solid black;\n    padding: 0.5em;\n    border-radius: 0.5em;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-flex-direction: column;\n    -ms-flex-direction: column;\n    flex-direction: column;\n\n    -webkit-animation-name: pulse;\n\n    animation-name: pulse;\n    -webkit-animation-duration: 0.4s;\n    animation-duration: 0.4s;\n    -webkit-animation-iteration-count: 1;\n    animation-iteration-count: 1;\n    -webkit-animation-timing-function: ease-in-out;\n    animation-timing-function: ease-in-out;\n}\n\n@-webkit-keyframes pulse {\n    0% {\n        background-color: orange;\n    }\n    100% {\n        background-color: rgba(255, 255, 255, 0);\n    }\n}\n\n@keyframes pulse {\n    0% {\n        background-color: orange;\n    }\n    100% {\n        background-color: rgba(255, 255, 255, 0);\n    }\n}\n\n.card-title {\n    -webkit-flex: 1;\n    -ms-flex: 1;\n    flex: 1;\n    overflow: auto;\n}\n\n.card-move-count {\n    background-color: lightgray;\n    padding: 0.25em;\n    -webkit-flex-shrink: 0;\n    -ms-flex-negative: 0;\n    flex-shrink: 0;\n}\n\n.card-history {\n    -webkit-flex-shrink: 0;\n    -ms-flex-negative: 0;\n    flex-shrink: 0;\n}\n\n.card-history.hidden {\n    display: none;\n}\n\n.card-delete-button {\n    text-align: right;\n    display: inline;\n    position: relative;\n    height: 0;\n    top: 0.2em;\n    left: -0.2em;\n    -webkit-flex-shrink: 0;\n    -ms-flex-negative: 0;\n    flex-shrink: 0;\n}\n\n.card.dragging {\n    opacity: 0.5;\n    background-color: lightblue;\n}\n\n.card.warning {\n    background-color: pink;\n    -webkit-animation-name: pulse-warning;\n    animation-name: pulse-warning;\n}\n\n@-webkit-keyframes pulse-warning {\n    0% {\n        background-color: orange;\n    }\n    100% {\n        background-color: pink;\n    }\n}\n\n@keyframes pulse-warning {\n    0% {\n        background-color: orange;\n    }\n    100% {\n        background-color: pink;\n    }\n}", ""]);
+	exports.push([module.id, ".card {\n    border: 1px solid black;\n    padding: 0.5em;\n    border-radius: 0.5em;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-flex-direction: column;\n    -ms-flex-direction: column;\n    flex-direction: column;\n\n    -webkit-animation-name: pulse;\n\n    animation-name: pulse;\n    -webkit-animation-duration: 0.4s;\n    animation-duration: 0.4s;\n    -webkit-animation-iteration-count: 1;\n    animation-iteration-count: 1;\n    -webkit-animation-timing-function: ease-in-out;\n    animation-timing-function: ease-in-out;\n}\n\n@-webkit-keyframes pulse {\n    0% {\n        background-color: orange;\n    }\n    100% {\n        background-color: rgba(255, 255, 255, 0);\n    }\n}\n\n@keyframes pulse {\n    0% {\n        background-color: orange;\n    }\n    100% {\n        background-color: rgba(255, 255, 255, 0);\n    }\n}\n\n.card-title {\n    -webkit-flex: 1;\n    -ms-flex: 1;\n    flex: 1;\n    overflow: auto;\n}\n\n.card-move-count {\n    background-color: lightgray;\n    padding: 0.25em;\n    -webkit-flex-shrink: 0;\n    -ms-flex-negative: 0;\n    flex-shrink: 0;\n}\n\n.card-history {\n    -webkit-flex-shrink: 0;\n    -ms-flex-negative: 0;\n    flex-shrink: 0;\n}\n\n.card-history.hidden {\n    display: none;\n}\n\n.card-delete-button {\n    text-align: right;\n    display: inline;\n    position: relative;\n    height: 0;\n    top: 0.2em;\n    left: -0.2em;\n    -webkit-flex-shrink: 0;\n    -ms-flex-negative: 0;\n    flex-shrink: 0;\n}\n\n.card.dragging {\n    opacity: 0.5;\n    background-color: lightblue;\n}\n\n.card.warning {\n    background-color: pink;\n    -webkit-animation-name: pulse-warning;\n    animation-name: pulse-warning;\n}\n\n@-webkit-keyframes pulse-warning {\n    0% {\n        background-color: orange;\n    }\n    100% {\n        background-color: pink;\n    }\n}\n\n@keyframes pulse-warning {\n    0% {\n        background-color: orange;\n    }\n    100% {\n        background-color: pink;\n    }\n}\n\n.card.confirm_delete {\n    background-color: deeppink;\n    text-align: center;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-flex-direction: column;\n    -ms-flex-direction: column;\n    flex-direction: column;\n    -webkit-justify-content: space-around;\n    -ms-flex-pack: distribute;\n    justify-content: space-around;\n}\n\n.card .card-confirm-title {\n    font-size: 1.5em;\n    font-weight: bold;\n}\n\n.card .card-delete-button, .card .card-move-count {\n    -webkit-flex-grow: 0;\n    -ms-flex-positive: 0;\n    flex-grow: 0;\n}", ""]);
 
 	// exports
 

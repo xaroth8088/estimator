@@ -11,7 +11,8 @@ import "./card.css"
 const cardSource = {
     beginDrag(props) {
         return {
-            card: props.card
+            card: props.card,
+            confirming_delete: false
         };
     }
 };
@@ -35,39 +36,64 @@ var Card = React.createClass({
 
         const { isDragging, connectDragSource, card } = this.props;
         card_class = "card";
-        if( isDragging === true ) {
+        if (isDragging === true) {
             card_class += " dragging";
         }
 
-        if( this.props.card.history.length > 5 ) {
+        if (this.props.card.history.length > 5) {
             card_class += " warning";
         }
 
         history_class = "card-history";
-        if( this.state.show_history === false ) {
+        if (this.state.show_history === false) {
             history_class += " hidden";
         }
 
-        return connectDragSource(
-            <div className={card_class}>
-                <div className="card-title">
-                    {card.title}
+        if (this.state.confirming_delete === true) {
+            card_class += " confirm_delete";
+            return (
+                <div className={card_class}>
+                    <div className="card-confirm-title">
+                        Confirm Delete?
+                    </div>
+                    <button onClick={this.onConfirmDeleteClicked} className="card-confirm-button">Delete!</button>
+                    <button onClick={this.onCancelDeleteClicked} className="card-cancel-button">Nevermind</button>
                 </div>
-                <div className="card-delete-button">
-                    <button onClick={this.onDeleteClicked}>Delete</button>
+            );
+        } else {
+            return connectDragSource(
+                <div className={card_class}>
+                    <div className="card-title">
+                        {card.title}
+                    </div>
+                    <div className="card-delete-button">
+                        <button onClick={this.onDeleteClicked}>Delete</button>
+                    </div>
+                    <div className="card-move-count" onClick={this.onShowHistoryClicked}>
+                        {card.history.length}
+                    </div>
+                    <div className={history_class}>
+                        {card.history.join(', ')}
+                    </div>
                 </div>
-                <div className="card-move-count" onClick={this.onShowHistoryClicked}>
-                    {card.history.length}
-                </div>
-                <div className={history_class}>
-                    {card.history.join(', ')}
-                </div>
-            </div>
-        );
+            );
+        }
+    },
+
+    onConfirmDeleteClicked() {
+        store.dispatch(deleteCard(this.props.card.card_id));
+    },
+
+    onCancelDeleteClicked() {
+        this.setState({
+            confirming_delete: false
+        });
     },
 
     onDeleteClicked() {
-        store.dispatch(deleteCard(this.props.card.card_id));
+        this.setState({
+            confirming_delete: true
+        });
     },
 
     onShowHistoryClicked() {
