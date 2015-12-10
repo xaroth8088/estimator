@@ -6,6 +6,8 @@ import { Router, Route, Link, Redirect } from 'react-router'
 import { Provider } from 'react-redux'
 import store from '../redux_store.es6'
 import App from "./app.jsx"
+import { connectToServer } from "../actions.es6"
+import CONFIG from "../config.es6"
 
 import './main.css';
 
@@ -14,6 +16,9 @@ ReactDOM.render((
         <App />
     </Provider>
 ), document.getElementById('app'));
+
+// Kick off the server connection process
+store.dispatch(connectToServer(CONFIG.crossbar_uri, CONFIG.realm));
 
 // TODO: routing, to get unique boards, and to create a board
 //// 404 route
