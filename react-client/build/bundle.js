@@ -25541,6 +25541,30 @@
 	    return new_state;
 	}
 
+	function reduceClearBoardReceived(state, payload) {
+	    var new_state;
+
+	    // Copy the old state
+	    new_state = copyState(state);
+
+	    // Modify the state
+	    // TODO: it'd be nice if we could just copy this portion out of the initial state.  Probably trivial once
+	    // TODO: the server events and board state are separated.
+	    new_state.columns = {
+	        1: [],
+	        2: [],
+	        3: [],
+	        5: [],
+	        8: [],
+	        13: [],
+	        '?': []
+	    };
+	    new_state.cards = {};
+
+	    // Return the new state
+	    return new_state;
+	}
+
 	function removeFromAllColumns(columns, card_id) {
 	    var column_id, index;
 
@@ -25760,6 +25784,8 @@
 	            return reduceMoveCardReceived(state, action.payload);
 	        case _actions.DELETE_CARD_RECEIVED:
 	            return reduceDeleteCardReceived(state, action.payload);
+	        case _actions.CLEAR_BOARD_RECEIVED:
+	            return reduceClearBoardReceived(state, action.payload);
 
 	        case _actions.CONNECTING_TO_SERVER:
 	            return reduceConnectingToServer(state, action.payload);
@@ -25812,8 +25838,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
-	exports.CLEAR_BOARD_RECEIVED = exports.DELETE_CARD_RECEIVED = exports.MOVE_CARD_RECEIVED = exports.ADD_CARD_RECEIVED = exports.SET_INITIAL_STATE = exports.INITIALIZATION_COMPLETE = exports.SUBSCRIBE_TO_CLEAR_BOARD_FAILED = exports.SUBSCRIBE_TO_DELETE_CARD_FAILED = exports.SUBSCRIBE_TO_MOVE_CARD_FAILED = exports.SUBSCRIBE_TO_ADD_CARD_FAILED = exports.UNSUBSCRIBE_FROM_INITIAL_STATE_FAILED = exports.UNSUBSCRIBING_FROM_INITIAL_STATE = exports.SET_INITIAL_STATE_TIMER = exports.GETTING_INITIAL_STATE = exports.SUBSCRIBE_TO_INITIAL_STATE_FAILED = exports.SUBSCRIBING_TO_INITIAL_STATE = exports.CONNECTION_CLOSED = exports.CONNECTING_TO_SERVER = exports.CLEAR_BOARD = undefined;
-	exports.clearBoard = clearBoard;
+	exports.CLEAR_BOARD_RECEIVED = exports.DELETE_CARD_RECEIVED = exports.MOVE_CARD_RECEIVED = exports.ADD_CARD_RECEIVED = exports.SET_INITIAL_STATE = exports.INITIALIZATION_COMPLETE = exports.SUBSCRIBE_TO_CLEAR_BOARD_FAILED = exports.SUBSCRIBE_TO_DELETE_CARD_FAILED = exports.SUBSCRIBE_TO_MOVE_CARD_FAILED = exports.SUBSCRIBE_TO_ADD_CARD_FAILED = exports.UNSUBSCRIBE_FROM_INITIAL_STATE_FAILED = exports.UNSUBSCRIBING_FROM_INITIAL_STATE = exports.SET_INITIAL_STATE_TIMER = exports.GETTING_INITIAL_STATE = exports.SUBSCRIBE_TO_INITIAL_STATE_FAILED = exports.SUBSCRIBING_TO_INITIAL_STATE = exports.CONNECTION_CLOSED = exports.CONNECTING_TO_SERVER = undefined;
 	exports.connectingToServer = connectingToServer;
 	exports.connectionClosed = connectionClosed;
 	exports.subscribingToInitialState = subscribingToInitialState;
@@ -25848,6 +25873,7 @@
 	exports.addCard = addCard;
 	exports.moveCard = moveCard;
 	exports.deleteCard = deleteCard;
+	exports.clearBoard = clearBoard;
 
 	var _autobahn = __webpack_require__(227);
 
@@ -25862,9 +25888,6 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	// TODO: split out user-initiated actions from server-connection-related actions
-
-	// User-driven actions
-	var CLEAR_BOARD = exports.CLEAR_BOARD = 'CLEAR_BOARD';
 
 	// Connection-related actions
 	var CONNECTING_TO_SERVER = exports.CONNECTING_TO_SERVER = 'CONNECTING_TO_SERVER';
@@ -25890,14 +25913,6 @@
 	var MOVE_CARD_RECEIVED = exports.MOVE_CARD_RECEIVED = 'MOVE_CARD_RECEIVED';
 	var DELETE_CARD_RECEIVED = exports.DELETE_CARD_RECEIVED = 'DELETE_CARD_RECEIVED';
 	var CLEAR_BOARD_RECEIVED = exports.CLEAR_BOARD_RECEIVED = 'CLEAR_BOARD_RECEIVED';
-
-	// TODO: add thunks which also publish the events
-	function clearBoard() {
-	    return {
-	        type: CLEAR_BOARD,
-	        payload: {}
-	    };
-	}
 
 	function connectingToServer() {
 	    // TODO: maybe include the URI we're connecting to here?
@@ -26258,12 +26273,7 @@
 	function subscribeToClearBoard() {
 	    return function (dispatch) {
 	        (0, _crossbar_connector.getSession)().subscribe("com.wikia.estimator.clear_board", function (data) {
-	            // TODO: TRANSLATE THIS TO REDUX
-	            // TODO: ALSO, add a clear board button to the UI.  ;)
-	            /*
-	            this._initState();
-	            this.table_view.onClearBoard();
-	            */
+	            dispatch(clearBoardReceived());
 	        }).then(null, function (reason) {
 	            dispatch(subscribeToClearBoardFailed(reason));
 	        });
@@ -26298,7 +26308,6 @@
 	    };
 	}
 
-	// TODO: add thunks which also publish the events
 	function deleteCard(card_id) {
 	    return function (dispatch) {
 	        // Delete the card locally
@@ -26306,6 +26315,14 @@
 
 	        // Broadcast to other clients that the card has been deleted
 	        (0, _crossbar_connector.getSession)().publish("com.wikia.estimator.delete_card", [card_id]);
+	    };
+	}
+
+	function clearBoard() {
+	    return function (dispatch) {
+	        dispatch(clearBoardReceived());
+
+	        (0, _crossbar_connector.getSession)().publish("com.wikia.estimator.clear_board", []);
 	    };
 	}
 
@@ -41402,6 +41419,10 @@
 
 	var _create_card2 = _interopRequireDefault(_create_card);
 
+	var _clear_board = __webpack_require__(445);
+
+	var _clear_board2 = _interopRequireDefault(_clear_board);
+
 	var _column = __webpack_require__(321);
 
 	var _column2 = _interopRequireDefault(_column);
@@ -41459,9 +41480,16 @@
 	        return _react2.default.createElement(
 	            "div",
 	            { className: "estimator" },
-	            _react2.default.createElement(_create_card2.default, { onCreateCard: function onCreateCard(title) {
-	                    return _this.props.dispatch((0, _actions.addCard)(title));
-	                } }),
+	            _react2.default.createElement(
+	                "div",
+	                { className: "toolbar" },
+	                _react2.default.createElement(_create_card2.default, { onCreateCard: function onCreateCard(title) {
+	                        return _this.props.dispatch((0, _actions.addCard)(title));
+	                    } }),
+	                _react2.default.createElement(_clear_board2.default, { onClearBoard: function onClearBoard() {
+	                        return _this.props.dispatch((0, _actions.clearBoard)());
+	                    } })
+	            ),
 	            _react2.default.createElement(
 	                "div",
 	                { className: "estimator-columns" },
@@ -41496,7 +41524,7 @@
 	    render: function render() {
 	        return _react2.default.createElement(
 	            "div",
-	            null,
+	            { className: "create_card" },
 	            _react2.default.createElement(
 	                "form",
 	                { action: "" },
@@ -41558,7 +41586,7 @@
 
 
 	// module
-	exports.push([module.id, "", ""]);
+	exports.push([module.id, ".create_card {\n    display: inline-block;\n    margin-right: 3em;\n}", ""]);
 
 	// exports
 
@@ -48655,6 +48683,139 @@
 
 
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
+
+/***/ },
+/* 445 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _redux_store = __webpack_require__(225);
+
+	var _redux_store2 = _interopRequireDefault(_redux_store);
+
+	var _actions = __webpack_require__(226);
+
+	__webpack_require__(446);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _react2.default.createClass({
+	    displayName: 'clear_board',
+	    getInitialState: function getInitialState() {
+	        return {
+	            confirming: false
+	        };
+	    },
+	    render: function render() {
+	        var class_name;
+
+	        class_name = "clear_board";
+
+	        if (this.state.confirming === true) {
+	            class_name += " clear_board-confirming";
+
+	            return _react2.default.createElement(
+	                'div',
+	                { className: class_name },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'clear_board-confirm-title' },
+	                    'Confirm deleting all cards?'
+	                ),
+	                _react2.default.createElement(
+	                    'button',
+	                    { onClick: this.onConfirmClearBoardClicked, className: 'clear_board-confirm-button' },
+	                    'Nuke \'em!'
+	                ),
+	                _react2.default.createElement(
+	                    'button',
+	                    { onClick: this.onCancelClearBoardClicked, className: 'clear_board-cancel-button' },
+	                    'Nevermind'
+	                )
+	            );
+	        } else {
+	            return _react2.default.createElement(
+	                'div',
+	                { className: class_name },
+	                _react2.default.createElement(
+	                    'button',
+	                    { onClick: this.onClearBoardClicked, className: 'clear_board-button' },
+	                    'Clear Board'
+	                )
+	            );
+	        }
+	    },
+	    onClearBoardClicked: function onClearBoardClicked() {
+	        this.setState({
+	            confirming: true
+	        });
+	    },
+	    onConfirmClearBoardClicked: function onConfirmClearBoardClicked() {
+	        this.setState({
+	            confirming: false
+	        });
+
+	        this.props.onClearBoard();
+	    },
+	    onCancelClearBoardClicked: function onCancelClearBoardClicked() {
+	        this.setState({
+	            confirming: false
+	        });
+	    }
+	});
+
+/***/ },
+/* 446 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(447);
+	if (typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(320)(content, {});
+	if (content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if (false) {
+		// When the styles change, update the <style> tags
+		if (!content.locals) {
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/autoprefixer-loader/index.js?cascade=false&browsers=last 2 version!./clear_board.css", function () {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/autoprefixer-loader/index.js?cascade=false&browsers=last 2 version!./clear_board.css");
+				if (typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function () {
+			update();
+		});
+	}
+
+/***/ },
+/* 447 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(319)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".clear_board {\n    display: inline-block;\n}", ""]);
+
+	// exports
+
 
 /***/ }
 /******/ ]);

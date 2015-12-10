@@ -1,7 +1,8 @@
 import React from "react"
 import CreateCard from "../create_card/create_card.jsx"
+import ClearBoard from "../clear_board/clear_board.jsx"
 import Column from "../column/column.jsx"
-import { addCard, moveCard, deleteCard } from "../../actions.es6"
+import { addCard, moveCard, deleteCard, clearBoard } from "../../actions.es6"
 
 import { DragDropContext } from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
@@ -26,7 +27,10 @@ var Estimator = React.createClass({
 
         return (
             <div className="estimator">
-                <CreateCard onCreateCard={title => this.props.dispatch(addCard(title))}/>
+                <div className="toolbar">
+                    <CreateCard onCreateCard={title => this.props.dispatch(addCard(title))}/>
+                    <ClearBoard onClearBoard={() => this.props.dispatch(clearBoard())} />
+                </div>
 
                 <div className="estimator-columns">
                     {columns}

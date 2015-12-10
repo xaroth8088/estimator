@@ -11,9 +11,6 @@ import uuid from "uuid"
 
 // TODO: split out user-initiated actions from server-connection-related actions
 
-// User-driven actions
-export const CLEAR_BOARD = 'CLEAR_BOARD';
-
 // Connection-related actions
 export const CONNECTING_TO_SERVER = 'CONNECTING_TO_SERVER';
 export const CONNECTION_CLOSED = 'CONNECTION_CLOSED';
@@ -38,14 +35,6 @@ export const ADD_CARD_RECEIVED = 'ADD_CARD_RECEIVED';
 export const MOVE_CARD_RECEIVED = 'MOVE_CARD_RECEIVED';
 export const DELETE_CARD_RECEIVED = 'DELETE_CARD_RECEIVED';
 export const CLEAR_BOARD_RECEIVED = 'CLEAR_BOARD_RECEIVED';
-
-// TODO: add thunks which also publish the events
-export function clearBoard() {
-    return {
-        type: CLEAR_BOARD,
-        payload: {}
-    }
-}
 
 export function connectingToServer() {
     // TODO: maybe include the URI we're connecting to here?
@@ -444,12 +433,7 @@ export function subscribeToClearBoard() {
         getSession().subscribe(
             "com.wikia.estimator.clear_board",
             (data) => {
-                // TODO: TRANSLATE THIS TO REDUX
-                // TODO: ALSO, add a clear board button to the UI.  ;)
-                /*
-                this._initState();
-                this.table_view.onClearBoard();
-                */
+                dispatch(clearBoardReceived());
             }
         ).then(
             null,
@@ -488,7 +472,6 @@ export function moveCard(card_id, to_column) {
     }
 }
 
-// TODO: add thunks which also publish the events
 export function deleteCard(card_id) {
     return function(dispatch) {
         // Delete the card locally
@@ -496,5 +479,13 @@ export function deleteCard(card_id) {
 
         // Broadcast to other clients that the card has been deleted
         getSession().publish("com.wikia.estimator.delete_card", [card_id]);
+    }
+}
+
+export function clearBoard() {
+    return function(dispatch) {
+        dispatch(clearBoardReceived());
+
+        getSession().publish("com.wikia.estimator.clear_board", []);
     }
 }

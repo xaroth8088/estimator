@@ -1,9 +1,9 @@
 import { combineReducers, createStore, applyMiddleware } from 'redux'
 import {
-    CLEAR_BOARD,
     ADD_CARD_RECEIVED,
     MOVE_CARD_RECEIVED,
     DELETE_CARD_RECEIVED,
+    CLEAR_BOARD_RECEIVED,
     CONNECTING_TO_SERVER,
     CONNECTION_CLOSED,
     SUBSCRIBING_TO_INITIAL_STATE,
@@ -103,6 +103,30 @@ function reduceDeleteCardReceived(state, payload) {
 
     // Remove the card from cards
     delete new_state.cards[payload.card_id];
+
+    // Return the new state
+    return new_state;
+}
+
+function reduceClearBoardReceived(state, payload) {
+    var new_state;
+
+    // Copy the old state
+    new_state = copyState(state);
+
+    // Modify the state
+    // TODO: it'd be nice if we could just copy this portion out of the initial state.  Probably trivial once
+    // TODO: the server events and board state are separated.
+    new_state.columns = {
+        1: [],
+        2: [],
+        3: [],
+        5: [],
+        8: [],
+        13: [],
+        '?': []
+    };
+    new_state.cards = {};
 
     // Return the new state
     return new_state;
@@ -303,6 +327,8 @@ function cards(state = initialState, action) {
             return reduceMoveCardReceived(state, action.payload);
         case DELETE_CARD_RECEIVED:
             return reduceDeleteCardReceived(state, action.payload);
+        case CLEAR_BOARD_RECEIVED:
+            return reduceClearBoardReceived(state, action.payload);
 
         case CONNECTING_TO_SERVER:
             return reduceConnectingToServer(state, action.payload);

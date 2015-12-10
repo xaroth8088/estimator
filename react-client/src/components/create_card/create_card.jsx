@@ -4,7 +4,7 @@ import "./create_card.css"
 export default React.createClass({
     render() {
         return (
-            <div>
+            <div className="create_card">
                 <form action="">
                     <input ref="card_title" placeholder="Enter card text" />
                     <button onClick={this.onCreateClicked}>Make it!</button>
