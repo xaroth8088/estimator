@@ -1,0 +1,14 @@
+.clear_board {
+    display: inline-block;
+}
+
+.clear_board.clear_board-confirming {
+    background-color: deeppink;
+    padding: 0.75em;
+    border-radius: 1em;
+    text-align: center;
+}
+
+.clear_board-confirm-title {
+    margin-bottom: 0.5em;
+}

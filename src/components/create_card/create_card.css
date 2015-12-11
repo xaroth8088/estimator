@@ -1,0 +1,14 @@
+.create_card {
+    display: inline-block;
+    margin-right: 3em;
+}
+
+.create_card textarea {
+    height: 2em;
+    min-width: 17em;
+    vertical-align: middle;
+}
+
+.create_card button {
+    margin-left: 3em;
+}
