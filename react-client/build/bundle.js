@@ -25747,6 +25747,20 @@
 	    return new_state;
 	}
 
+	function reduceSetInitialState(state, payload) {
+	    var new_state;
+
+	    // Copy the old state
+	    new_state = copyState(state);
+
+	    // Update the state
+	    new_state.cards = payload.cards;
+	    new_state.columns = payload.columns;
+
+	    // Return the new state
+	    return new_state;
+	}
+
 	function reduceUnsubscribingFromInitialState(state, payload) {
 	    var new_state;
 
@@ -25799,6 +25813,8 @@
 	            return reduceGettingInitialState(state, action.payload);
 	        case _actions.SET_INITIAL_STATE_TIMER:
 	            return reduceSetInitialStateTimer(state, action.payload);
+	        case _actions.SET_INITIAL_STATE:
+	            return reduceSetInitialState(state, action.payload);
 	        case _actions.UNSUBSCRIBING_FROM_INITIAL_STATE:
 	            return reduceUnsubscribingFromInitialState(state, action.payload);
 	        case _actions.UNSUBSCRIBE_FROM_INITIAL_STATE_FAILED:
@@ -26017,11 +26033,12 @@
 	    };
 	}
 
-	function setInitialState(initial_board_state) {
+	function setInitialState(cards, columns) {
 	    return {
 	        type: SET_INITIAL_STATE,
 	        payload: {
-	            initial_board_state: initial_board_state
+	            cards: cards,
+	            columns: columns
 	        }
 	    };
 	}
@@ -26118,8 +26135,8 @@
 
 	        dispatch(subscribingToInitialState());
 
-	        (0, _crossbar_connector.getSession)().subscribe("com.wikia.estimator.set_initial_state", function (initial_board_state) {
-	            dispatch(initialStateReceived(initial_board_state));
+	        (0, _crossbar_connector.getSession)().subscribe("com.wikia.estimator.set_initial_state", function (data) {
+	            dispatch(initialStateReceived(data[0], data[1]));
 
 	            dispatch(unsubscribeFromInitialState());
 	        }).then(function (subscription) {
@@ -26161,17 +26178,21 @@
 	    };
 	}
 
-	function initialStateReceived(initial_board_state) {
+	function initialStateReceived(cards, columns) {
 	    return function (dispatch, getState) {
+	        var state;
+
+	        state = getState();
+
 	        if (state.cards.app_state !== _constants.LOADING_STATES.GETTING_INITIAL_STATE) {
 	            // This might happen in a race condition, but isn't a big deal so just skip out
 	            return;
 	        }
 
-	        clearTimeout(getState().cards.initial_state_timer);
+	        clearTimeout(state.cards.initial_state_timer);
 	        dispatch(setInitialStateTimer(null));
 
-	        dispatch(setInitialState(initial_board_state));
+	        dispatch(setInitialState(cards, columns));
 
 	        dispatch(unsubscribeFromInitialState());
 	    };
@@ -26215,13 +26236,15 @@
 	}
 
 	function subscribeToRequestInitialState() {
-	    return function (dispatch) {
+	    return function (dispatch, getState) {
 	        // Sub to requests for initial state, for future clients
-	        (0, _crossbar_connector.getSession)().subscribe("com.wikia.estimator.request_initial_state", function () {
-	            // TODO: format the (what used to be) this.state for transfer across the wire
-	            // TODO: similarly, when we receive an initial state, parse it back out correctly
-	            // TODO: getSession().publish("com.wikia.estimator.set_initial_state", [this.state]);
-	        }).then(null, function (reason) {
+	        (0, _crossbar_connector.getSession)().subscribe("com.wikia.estimator.request_initial_state", function (data) {
+	            var state;
+
+	            state = getState();
+
+	            (0, _crossbar_connector.getSession)().publish("com.wikia.estimator.set_initial_state", [state.cards.cards, state.cards.columns]);
+	        }).then(function () {}, function (reason) {
 	            dispatch(subscribeToRequestInitialStateFailed(reason));
 	        });
 	    };
@@ -26235,7 +26258,7 @@
 	            card = data[0];
 
 	            dispatch(addCardReceived(card));
-	        }).then(null, function (reason) {
+	        }).then(function () {}, function (reason) {
 	            dispatch(subscribeToAddCardFailed(reason));
 	        });
 	    };
@@ -28834,7 +28857,7 @@
 /* 240 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var require;var __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(process) {/** @license MIT License (c) copyright 2010-2014 original author or authors */
+	var __WEBPACK_AMD_DEFINE_RESULT__;var require;/* WEBPACK VAR INJECTION */(function(process) {/** @license MIT License (c) copyright 2010-2014 original author or authors */
 	/** @author Brian Cavalier */
 	/** @author John Hann */
 

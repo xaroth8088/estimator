@@ -139,11 +139,12 @@ export function subscribeToClearBoardFailed(reason) {
     }
 }
 
-export function setInitialState(initial_board_state) {
+export function setInitialState(cards, columns) {
     return {
         type: SET_INITIAL_STATE,
         payload: {
-            initial_board_state: initial_board_state
+            cards: cards,
+            columns: columns
         }
     }
 }
@@ -242,8 +243,8 @@ export function subscribeToInitialState() {
 
         getSession().subscribe(
             "com.wikia.estimator.set_initial_state",
-            (initial_board_state) => {
-                dispatch(initialStateReceived(initial_board_state));
+            (data) => {
+                dispatch(initialStateReceived(data[0], data[1]));
 
                 dispatch(unsubscribeFromInitialState());
             }
@@ -292,17 +293,21 @@ export function initialStateTimeout() {
     }
 }
 
-export function initialStateReceived(initial_board_state) {
+export function initialStateReceived(cards, columns) {
     return function (dispatch, getState) {
+        var state;
+
+        state = getState();
+
         if (state.cards.app_state !== LOADING_STATES.GETTING_INITIAL_STATE) {
             // This might happen in a race condition, but isn't a big deal so just skip out
             return;
         }
 
-        clearTimeout(getState().cards.initial_state_timer);
+        clearTimeout(state.cards.initial_state_timer);
         dispatch(setInitialStateTimer(null));
 
-        dispatch(setInitialState(initial_board_state));
+        dispatch(setInitialState(cards, columns));
 
         dispatch(unsubscribeFromInitialState());
     };
@@ -349,17 +354,19 @@ export function unsubscribedFromInitialState() {
 }
 
 export function subscribeToRequestInitialState() {
-    return function (dispatch) {
+    return function (dispatch, getState) {
         // Sub to requests for initial state, for future clients
         getSession().subscribe(
             "com.wikia.estimator.request_initial_state",
-            () => {
-                // TODO: format the (what used to be) this.state for transfer across the wire
-                // TODO: similarly, when we receive an initial state, parse it back out correctly
-                // TODO: getSession().publish("com.wikia.estimator.set_initial_state", [this.state]);
+            (data) => {
+                var state;
+
+                state = getState();
+
+                getSession().publish("com.wikia.estimator.set_initial_state", [state.cards.cards, state.cards.columns]);
             }
         ).then(
-            null,
+            () => {},
             (reason) => {
                 dispatch(subscribeToRequestInitialStateFailed(reason));
             }
@@ -379,7 +386,7 @@ export function subscribeToAddCard() {
                 dispatch(addCardReceived(card));
             }
         ).then(
-            null,
+            () => {},
             (reason) => {
                 dispatch(subscribeToAddCardFailed(reason));
             }

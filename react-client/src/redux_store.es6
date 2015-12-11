@@ -10,6 +10,7 @@ import {
     SUBSCRIBE_TO_INITIAL_STATE_FAILED,
     GETTING_INITIAL_STATE,
     SET_INITIAL_STATE_TIMER,
+    SET_INITIAL_STATE,
     UNSUBSCRIBING_FROM_INITIAL_STATE,
     UNSUBSCRIBE_FROM_INITIAL_STATE_FAILED,
     SUBSCRIBE_TO_ADD_CARD_FAILED,
@@ -293,6 +294,20 @@ function reduceSetInitialStateTimer(state, payload) {
     return new_state;
 }
 
+function reduceSetInitialState(state, payload) {
+    var new_state;
+
+    // Copy the old state
+    new_state = copyState(state);
+
+    // Update the state
+    new_state.cards = payload.cards;
+    new_state.columns = payload.columns;
+
+    // Return the new state
+    return new_state;
+}
+
 function reduceUnsubscribingFromInitialState(state, payload) {
     var new_state;
 
@@ -342,6 +357,8 @@ function cards(state = initialState, action) {
             return reduceGettingInitialState(state, action.payload);
         case SET_INITIAL_STATE_TIMER:
             return reduceSetInitialStateTimer(state, action.payload);
+        case SET_INITIAL_STATE:
+            return reduceSetInitialState(state, action.payload);
         case UNSUBSCRIBING_FROM_INITIAL_STATE:
             return reduceUnsubscribingFromInitialState(state, action.payload);
         case UNSUBSCRIBE_FROM_INITIAL_STATE_FAILED:
