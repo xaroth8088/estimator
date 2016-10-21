@@ -28448,28 +28448,22 @@
 	module.exports = {
 		"_args": [
 			[
-				"autobahn",
-				"/Users/xaroth/Documents/wikia_git/estimator/react-client"
+				"autobahn@https://registry.npmjs.org/autobahn/-/autobahn-0.9.8.tgz",
+				"/Users/geoffbenson/Documents/wikia_github/estimator"
 			]
 		],
 		"_from": "autobahn@*",
 		"_id": "autobahn@0.9.8",
 		"_inCache": true,
-		"_installable": true,
 		"_location": "/autobahn",
-		"_npmUser": {
-			"email": "alexander.goedde@tavendo.de",
-			"name": "goeddea"
-		},
-		"_npmVersion": "1.4.28",
 		"_phantomChildren": {},
 		"_requested": {
 			"name": "autobahn",
-			"raw": "autobahn",
-			"rawSpec": "",
+			"raw": "autobahn@https://registry.npmjs.org/autobahn/-/autobahn-0.9.8.tgz",
+			"rawSpec": "https://registry.npmjs.org/autobahn/-/autobahn-0.9.8.tgz",
 			"scope": null,
-			"spec": "*",
-			"type": "range"
+			"spec": "https://registry.npmjs.org/autobahn/-/autobahn-0.9.8.tgz",
+			"type": "remote"
 		},
 		"_requiredBy": [
 			"#DEV:/"
@@ -28477,8 +28471,8 @@
 		"_resolved": "https://registry.npmjs.org/autobahn/-/autobahn-0.9.8.tgz",
 		"_shasum": "373bb8da65614c784df1be19ac512a73fde356f2",
 		"_shrinkwrap": null,
-		"_spec": "autobahn",
-		"_where": "/Users/xaroth/Documents/wikia_git/estimator/react-client",
+		"_spec": "autobahn@https://registry.npmjs.org/autobahn/-/autobahn-0.9.8.tgz",
+		"_where": "/Users/geoffbenson/Documents/wikia_github/estimator",
 		"author": {
 			"name": "Tavendo GmbH"
 		},
@@ -28498,33 +28492,19 @@
 			"browserify": ">= 11.0.1",
 			"nodeunit": ">= 0.9.1"
 		},
-		"directories": {},
-		"dist": {
-			"shasum": "373bb8da65614c784df1be19ac512a73fde356f2",
-			"tarball": "http://registry.npmjs.org/autobahn/-/autobahn-0.9.8.tgz"
-		},
-		"homepage": "https://github.com/tavendo/AutobahnJS",
+		"homepage": "https://github.com/tavendo/AutobahnJS#readme",
 		"keywords": [
-			"PubSub",
-			"RPC",
 			"WAMP",
-			"WebSocket"
+			"WebSocket",
+			"RPC",
+			"PubSub"
 		],
 		"license": "MIT",
 		"main": "index.js",
-		"maintainers": [
-			{
-				"name": "goeddea",
-				"email": "alexander.goedde@tavendo.de"
-			},
-			{
-				"name": "oberstet",
-				"email": "tobias.oberstein@tavendo.de"
-			}
-		],
 		"name": "autobahn",
 		"optionalDependencies": {},
-		"readme": "ERROR: No README data found!",
+		"readme": "# AutobahnJS\r\n\r\nAutobahnJS implements **[The Web Application Messaging Protocol V2](http://wamp.ws/)** in JavaScript.\r\n\r\nWAMP provides asynchronous **Remote Procedure Calls** and **Publish & Subscribe** for applications in *one* protocol running over [WebSocket](http://tools.ietf.org/html/rfc6455).\r\n\r\nAutobahnJS runs on both **Web browsers** and **[Node.js](http://nodejs.org/)**, and implements the following WAMP roles:\r\n\r\n1. Publisher\r\n2. Subscriber\r\n3. Caller\r\n4. Callee\r\n\r\nAutobahnJS is part of the [Autobahn project](http://autobahn.ws/), MIT licensed, and full source code can be found on [GitHub](https://github.com/tavendo/AutobahnJS/).\r\n",
+		"readmeFilename": "README.md",
 		"repository": {
 			"type": "git",
 			"url": "git://github.com/tavendo/AutobahnJS.git"
@@ -46769,7 +46749,7 @@
 
 
 	// module
-	exports.push([module.id, ".column {\n    -webkit-flex: 1;\n    -ms-flex: 1;\n    flex: 1;\n\n    display: -webkit-flex;\n\n    display: -ms-flexbox;\n\n    display: flex;\n    -webkit-flex-direction: column;\n    -ms-flex-direction: column;\n    flex-direction: column;\n}\n\n.column > .column-header {\n    padding: 0.5em;\n    background-color: lightgray;\n    color: black;\n    border: 1px solid black;\n    width: 100%;\n    text-align: center;\n    font-weight: bold;\n    -webkit-flex-shrink: 0;\n    -ms-flex-negative: 0;\n    flex-shrink: 0;\n}\n\n.column > .column-body > .column-card {\n    min-height: 7em;\n    max-height: 7em;\n    margin: 0.5em 0;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n}\n\n.column > .column-body > .column-card > .card {\n    -webkit-flex: 1;\n    -ms-flex: 1;\n    flex: 1;\n}\n\n.column > .column-body {\n    -webkit-flex: 1;\n    -ms-flex: 1;\n    flex: 1;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-flex-direction: column;\n    -ms-flex-direction: column;\n    flex-direction: column;\n    border-left: 1px solid lightgray;\n    overflow: auto;\n}\n\n.column.hover {\n    background-color: lightgreen;\n}", ""]);
+	exports.push([module.id, ".column {\n    -webkit-flex: 1;\n    -ms-flex: 1;\n    flex: 1;\n\n    display: -webkit-flex;\n\n    display: -ms-flexbox;\n\n    display: flex;\n    -webkit-flex-direction: column;\n    -ms-flex-direction: column;\n    flex-direction: column;\n}\n\n.column > .column-header {\n    padding: 0.5em;\n    background-color: lightgray;\n    color: black;\n    border: 1px solid black;\n    width: 100%;\n    text-align: center;\n    font-weight: bold;\n    -webkit-flex-shrink: 0;\n    -ms-flex-negative: 0;\n    flex-shrink: 0;\n}\n\n.column > .column-body > .column-card {\n    min-height: 7em;\n    max-height: 20em;\n    margin: 0.5em 0;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n}\n\n.column > .column-body > .column-card > .card {\n    -webkit-flex: 1;\n    -ms-flex: 1;\n    flex: 1;\n}\n\n.column > .column-body {\n    -webkit-flex: 1;\n    -ms-flex: 1;\n    flex: 1;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-flex-direction: column;\n    -ms-flex-direction: column;\n    flex-direction: column;\n    border-left: 1px solid lightgray;\n    overflow: auto;\n}\n\n.column.hover {\n    background-color: lightgreen;\n}", ""]);
 
 	// exports
 
@@ -48821,7 +48801,8 @@
 	});
 	var CONFIG = {
 	    //crossbar_uri: 'ws://127.0.0.1:8080/ws',
-	    crossbar_uri: 'wss://demo.crossbar.io/ws',
+	    //crossbar_uri: 'wss://demo.crossbar.io/ws',
+	    crossbar_uri: 'ws://bebs.net:9090/ws',
 	    realm: 'realm1'
 	};
 
