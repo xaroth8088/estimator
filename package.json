@@ -28,5 +28,8 @@
     "uuid": "^2.0.1",
     "webpack": "^1.12.8",
     "when": "^3.7.5"
+  },
+  "scripts": {
+    "build": "webpack --colors --config"
   }
 }
