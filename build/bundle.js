@@ -52845,8 +52845,6 @@
 	});
 	var CONFIG = {
 	    crossbar_uri: 'ws://157.230.143.136:8080/ws',
-	    // crossbar_uri: 'wss://demo.crossbar.io/ws',
-	    //crossbar_uri: 'ws://bebs.net:9090/ws',
 	    realm: 'realm1'
 	};
 
