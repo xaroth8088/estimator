@@ -55,7 +55,7 @@ spec:
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: fandom-creator
+  name: crossbar-estimator
   namespace: dev
 spec:
   rules:
