@@ -7,10 +7,10 @@ metadata:
   namespace: dev
 spec:
   ports:
-    - port: 80
+    - port: 8080
       name: main
       protocol: TCP
-      targetPort: 80
+      targetPort: 8080
   selector:
     app: crossbar-estimator
   type: ClusterIP
