@@ -1,6 +1,12 @@
 # Estimator
 This is a quick-and-dirty tool for an alternative method of poker planning, usable by a distributed team.
 
+## Setup
+- `docker run crossbario/crossbar` from a VPS or server
+- Update the `Config.es6` with the IP (default port 8080)
+- Run `npm run build`
+- Merge `master` into `gh-pages`
+
 ## Usage
 Load this webpage in your favorite modern web browser.  No webserver is required - it can be loaded straight off 
 your filesystem if you like.
