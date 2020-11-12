@@ -1,5 +1,3 @@
-//require("babel-polyfill");    // If you'd like to try running this on really old browsers, uncomment this
-
 import React from "react";
 import ReactDOM from "react-dom";
 import { Router, Route, Link, Redirect } from 'react-router'

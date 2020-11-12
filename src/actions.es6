@@ -1,4 +1,4 @@
-import { Connection } from "autobahn"
+import { Connection } from "autobahn-browser"
 import { LOADING_STATES, INITIAL_STATE_SUBSCRIPTION } from "./constants.es6"
 import {
     registerSession,
@@ -7,7 +7,7 @@ import {
     getSubscription,
     unregisterSubscription
 } from "./crossbar_connector.es6"
-import uuid from "uuid"
+import { v4 } from "uuid"
 
 // TODO: split out user-initiated actions from server-connection-related actions
 
@@ -242,7 +242,7 @@ export function subscribeToInitialState() {
         dispatch(subscribingToInitialState());
 
         getSession().subscribe(
-            "com.wikia.estimator.set_initial_state",
+            "estimator.set_initial_state",
             (data) => {
                 dispatch(initialStateReceived(data[0], data[1]));
 
@@ -267,7 +267,7 @@ export function requestInitialState() {
         dispatch(gettingInitialState());
 
         // Broadcast out a request for getting the initial state (we'll take whoever comes back first as our state)
-        getSession().publish("com.wikia.estimator.request_initial_state", []);
+        getSession().publish("estimator.request_initial_state", []);
 
         // We may be the first people in the room, in which case our request to get the initial state will never return
         // So, set a timer instead to wait for a little while before just assuming we're alone
@@ -357,13 +357,13 @@ export function subscribeToRequestInitialState() {
     return function (dispatch, getState) {
         // Sub to requests for initial state, for future clients
         getSession().subscribe(
-            "com.wikia.estimator.request_initial_state",
+            "estimator.request_initial_state",
             (data) => {
                 var state;
 
                 state = getState();
 
-                getSession().publish("com.wikia.estimator.set_initial_state", [state.cards.cards, state.cards.columns]);
+                getSession().publish("estimator.set_initial_state", [state.cards.cards, state.cards.columns]);
             }
         ).then(
             () => {},
@@ -377,7 +377,7 @@ export function subscribeToRequestInitialState() {
 export function subscribeToAddCard() {
     return function (dispatch) {
         getSession().subscribe(
-            "com.wikia.estimator.new_card",
+            "estimator.new_card",
             (data) => {
                 var card;
 
@@ -397,7 +397,7 @@ export function subscribeToAddCard() {
 export function subscribeToMoveCard() {
     return function (dispatch) {
         getSession().subscribe(
-            "com.wikia.estimator.move_card",
+            "estimator.move_card",
             (data) => {
                 var card_id, to_column;
 
@@ -418,7 +418,7 @@ export function subscribeToMoveCard() {
 export function subscribeToDeleteCard() {
     return function (dispatch) {
         getSession().subscribe(
-            "com.wikia.estimator.delete_card",
+            "estimator.delete_card",
             (data) => {
                 var card_id;
 
@@ -438,7 +438,7 @@ export function subscribeToDeleteCard() {
 export function subscribeToClearBoard() {
     return function (dispatch) {
         getSession().subscribe(
-            "com.wikia.estimator.clear_board",
+            "estimator.clear_board",
             (data) => {
                 dispatch(clearBoardReceived());
             }
@@ -457,7 +457,7 @@ export function addCard(title) {
 
         // Create the card locally
         card = {
-            card_id: uuid.v4(),
+            card_id: v4(),
             title: title,
             history: []
         };
@@ -465,7 +465,7 @@ export function addCard(title) {
         dispatch(addCardReceived(card));
 
         // Broadcast to other clients that the card has been created
-        getSession().publish("com.wikia.estimator.new_card", [card]);
+        getSession().publish("estimator.new_card", [card]);
     }
 }
 
@@ -475,7 +475,7 @@ export function moveCard(card_id, to_column) {
         dispatch(moveCardReceived(card_id, to_column));
 
         // Broadcast to other clients that the card has been moved
-        getSession().publish("com.wikia.estimator.move_card", [card_id, to_column]);
+        getSession().publish("estimator.move_card", [card_id, to_column]);
     }
 }
 
@@ -485,7 +485,7 @@ export function deleteCard(card_id) {
         dispatch(deleteCardReceived(card_id));
 
         // Broadcast to other clients that the card has been deleted
-        getSession().publish("com.wikia.estimator.delete_card", [card_id]);
+        getSession().publish("estimator.delete_card", [card_id]);
     }
 }
 
@@ -493,6 +493,6 @@ export function clearBoard() {
     return function(dispatch) {
         dispatch(clearBoardReceived());
 
-        getSession().publish("com.wikia.estimator.clear_board", []);
+        getSession().publish("estimator.clear_board", []);
     }
 }
