@@ -1,56 +1,50 @@
-import React from "react"
-import Card from "../card/card.jsx"
+import React from 'react';
 
-import { DropTarget } from 'react-dnd';
-import { ItemTypes } from '../../constants.es6';
-import store from '../../redux_store.es6';
+import { useDrop } from 'react-dnd';
+import { useDispatch } from 'react-redux';
 import { moveCard } from '../../actions.es6';
+import { ItemTypes } from '../../constants.es6';
+import Card from '../card/card.jsx';
 
-import "./column.css"
+import './column.css';
 
-const columnTarget = {
-    drop(props, monitor) {
-        store.dispatch(moveCard(monitor.getItem().card.card_id, props.column_id));
-    }
-};
+function Column({ column_id, card_ids, cards }) {
+    const dispatch = useDispatch();
+    const [{ isOver }, drop] = useDrop({
+        accept: ItemTypes.CARD,
+        drop({ card }) {
+            dispatch(moveCard(card.card_id, column_id));
+        },
+        collect: (monitor) => ({
+            isOver: !!monitor.isOver()
+        })
+    });
+    var card_id, cardComponents, column_class;
 
-function collect(connect, monitor) {
-    return {
-        connectDropTarget: connect.dropTarget(),
-        isOver: monitor.isOver()
-    };
-}
-
-var Column = React.createClass({
-    render() {
-        var card_id, cards, column_class;
-        const { connectDropTarget, isOver } = this.props;
-
-        cards = [];
-        for (card_id of this.props.card_ids) {
-            cards.push(
-                <div key={card_id} className="column-card">
-                    <Card card={this.props.cards[card_id]}/>
-                </div>
-            );
-        }
-
-        column_class = "column";
-        if( isOver === true ) {
-            column_class += " hover";
-        }
-
-        return connectDropTarget(
-            <div className={column_class}>
-                <div className="column-header">
-                    {this.props.column_id}
-                </div>
-                <div className="column-body">
-                    {cards}
-                </div>
+    cardComponents = [];
+    for (card_id of card_ids) {
+        cardComponents.push(
+            <div key={card_id} className="column-card">
+                <Card card={cards[card_id]} />
             </div>
         );
     }
-});
 
-export default DropTarget(ItemTypes.CARD, columnTarget, collect)(Column);
+    column_class = 'column';
+    if (isOver === true) {
+        column_class += ' hover';
+    }
+
+    return (
+        <div className={column_class} ref={drop}>
+            <div className="column-header">
+                {column_id}
+            </div>
+            <div className="column-body">
+                {cardComponents}
+            </div>
+        </div>
+    );
+}
+
+export default Column;

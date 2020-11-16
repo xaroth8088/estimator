@@ -1,43 +1,45 @@
-import React from "react"
-import CreateCard from "../create_card/create_card.jsx"
-import ClearBoard from "../clear_board/clear_board.jsx"
-import Column from "../column/column.jsx"
-import { addCard, moveCard, deleteCard, clearBoard } from "../../actions.es6"
+import React from 'react';
 
-import { DragDropContext } from 'react-dnd';
-import HTML5Backend from 'react-dnd-html5-backend';
+import { DndProvider } from 'react-dnd';
+import { HTML5Backend } from 'react-dnd-html5-backend';
+import { useDispatch } from 'react-redux';
+import { addCard, clearBoard } from '../../actions.es6';
+import ClearBoard from '../clear_board/clear_board.jsx';
+import Column from '../column/column.jsx';
+import CreateCard from '../create_card/create_card.jsx';
 
-import "./estimator.css"
+import './estimator.css';
 
-var Estimator = React.createClass({
-    render() {
-        var columns, column_id;
+function Estimator({columns, cards}) {
+    const dispatch = useDispatch();
+    var columnsComponents, column_id;
 
-        columns = [];
-        for (column_id of Object.keys(this.props.columns)) {
-            columns.push(
-                <Column
-                    key={column_id}
-                    column_id={column_id}
-                    card_ids={this.props.columns[column_id]}
-                    cards={this.props.cards}
-                    />
-            );
-        }
+    columnsComponents = [];
+    for (column_id of Object.keys(columns)) {
+        columnsComponents.push(
+            <Column
+                key={column_id}
+                column_id={column_id}
+                card_ids={columns[column_id]}
+                cards={cards}
+            />
+        );
+    }
 
-        return (
+    return (
+        <DndProvider backend={HTML5Backend}>
             <div className="estimator">
                 <div className="toolbar">
-                    <CreateCard onCreateCard={title => this.props.dispatch(addCard(title))}/>
-                    <ClearBoard onClearBoard={() => this.props.dispatch(clearBoard())} />
+                    <CreateCard onCreateCard={title => dispatch(addCard(title))} />
+                    <ClearBoard onClearBoard={() => dispatch(clearBoard())} />
                 </div>
 
                 <div className="estimator-columns">
-                    {columns}
+                    {columnsComponents}
                 </div>
             </div>
-        );
-    }
-});
+        </DndProvider>
+    );
+}
 
-export default DragDropContext(HTML5Backend)(Estimator);
+export default Estimator;

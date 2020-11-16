@@ -1,11 +1,10 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { Router, Route, Link, Redirect } from 'react-router'
-import { Provider } from 'react-redux'
-import store from '../redux_store.es6'
-import App from "./app.jsx"
-import { connectToServer } from "../actions.es6"
-import CONFIG from "../config.es6"
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { connectToServer } from '../actions.es6';
+import CONFIG from '../config.es6';
+import store from '../redux_store.es6';
+import App from './app.jsx';
 
 import './main.css';
 

@@ -1,33 +1,32 @@
-import { combineReducers, createStore, applyMiddleware } from 'redux'
+import { applyMiddleware, combineReducers, createStore } from 'redux';
+import { createLogger } from 'redux-logger';
+import thunkMiddleware from 'redux-thunk';
 import {
     ADD_CARD_RECEIVED,
-    MOVE_CARD_RECEIVED,
-    DELETE_CARD_RECEIVED,
     CLEAR_BOARD_RECEIVED,
     CONNECTING_TO_SERVER,
     CONNECTION_CLOSED,
-    SUBSCRIBING_TO_INITIAL_STATE,
-    SUBSCRIBE_TO_INITIAL_STATE_FAILED,
+    DELETE_CARD_RECEIVED,
     GETTING_INITIAL_STATE,
-    SET_INITIAL_STATE_TIMER,
+    INITIALIZATION_COMPLETE,
+    MOVE_CARD_RECEIVED,
     SET_INITIAL_STATE,
-    UNSUBSCRIBING_FROM_INITIAL_STATE,
-    UNSUBSCRIBE_FROM_INITIAL_STATE_FAILED,
+    SET_INITIAL_STATE_TIMER,
     SUBSCRIBE_TO_ADD_CARD_FAILED,
-    SUBSCRIBE_TO_MOVE_CARD_FAILED,
-    SUBSCRIBE_TO_DELETE_CARD_FAILED,
     SUBSCRIBE_TO_CLEAR_BOARD_FAILED,
-    INITIALIZATION_COMPLETE
-} from "./actions.es6"
-import { LOADING_STATES } from "./constants.es6"
-import thunkMiddleware from 'redux-thunk'
-import createLogger from 'redux-logger'
-import uuid from 'uuid'
+    SUBSCRIBE_TO_DELETE_CARD_FAILED,
+    SUBSCRIBE_TO_INITIAL_STATE_FAILED,
+    SUBSCRIBE_TO_MOVE_CARD_FAILED,
+    SUBSCRIBING_TO_INITIAL_STATE,
+    UNSUBSCRIBE_FROM_INITIAL_STATE_FAILED,
+    UNSUBSCRIBING_FROM_INITIAL_STATE
+} from './actions.es6';
+import { LOADING_STATES } from './constants.es6';
 
 // TODO: split out 'cards' state tree reducers from 'app status' state tree reducers
 const initialState = {
     app_state: LOADING_STATES.UNINITIALIZED,
-    app_error_description: "",
+    app_error_description: '',
     receive_initial_state_subscription: null,
     initial_state_timer: null,
     columns: {
@@ -75,6 +74,10 @@ function reduceAddCardReceived(state, payload) {
 }
 
 function reduceMoveCardReceived(state, payload) {
+    // Don't move to the same column you're already in
+    if (state.columns[payload.to_column].find((a) => a === payload.card_id) !== undefined) {
+        return state;
+    }
     var new_state;
 
     // Copy the old state
@@ -152,7 +155,7 @@ function reduceConnectionClosed(state, payload) {
 
     // Update the state
     new_state.app_state = LOADING_STATES.ERROR;
-    new_state.app_error_description = "Sorry, but the connection was closed.  This was the reason given:" + payload.reason;
+    new_state.app_error_description = 'Sorry, but the connection was closed.  This was the reason given:' + payload.reason;
 
     // Return the new state
     return new_state;
@@ -166,7 +169,7 @@ function reduceSubscribeToInitialStateFailed(state, payload) {
 
     // Update the state
     new_state.app_state = LOADING_STATES.ERROR;
-    new_state.app_error_description = "Sorry, but we were unable to subscribe to the initial board state.  This was the reason given:" + payload.reason;
+    new_state.app_error_description = 'Sorry, but we were unable to subscribe to the initial board state.  This was the reason given:' + payload.reason;
 
     // Return the new state
     return new_state;
@@ -180,7 +183,7 @@ function reduceUnsubscribeFromInitialStateFailed(state, payload) {
 
     // Update the state
     new_state.app_state = LOADING_STATES.ERROR;
-    new_state.app_error_description = "Sorry, but we were unable to unsubscribe from receiving the initial board state.  This was the reason given:" + payload.reason;
+    new_state.app_error_description = 'Sorry, but we were unable to unsubscribe from receiving the initial board state.  This was the reason given:' + payload.reason;
 
     // Return the new state
     return new_state;
@@ -194,7 +197,7 @@ function reduceSubscribeToAddCardFailed(state, payload) {
 
     // Update the state
     new_state.app_state = LOADING_STATES.ERROR;
-    new_state.app_error_description = "Sorry, but we were unable to subscribe to receiving added cards.  This was the reason given:" + payload.reason;
+    new_state.app_error_description = 'Sorry, but we were unable to subscribe to receiving added cards.  This was the reason given:' + payload.reason;
 
     // Return the new state
     return new_state;
@@ -208,7 +211,7 @@ function reduceSubscribeToMoveCardFailed(state, payload) {
 
     // Update the state
     new_state.app_state = LOADING_STATES.ERROR;
-    new_state.app_error_description = "Sorry, but we were unable to subscribe to receiving moved cards.  This was the reason given:" + payload.reason;
+    new_state.app_error_description = 'Sorry, but we were unable to subscribe to receiving moved cards.  This was the reason given:' + payload.reason;
 
     // Return the new state
     return new_state;
@@ -222,7 +225,7 @@ function reduceSubscribeToDeleteCardFailed(state, payload) {
 
     // Update the state
     new_state.app_state = LOADING_STATES.ERROR;
-    new_state.app_error_description = "Sorry, but we were unable to subscribe to receiving deleted cards.  This was the reason given:" + payload.reason;
+    new_state.app_error_description = 'Sorry, but we were unable to subscribe to receiving deleted cards.  This was the reason given:' + payload.reason;
 
     // Return the new state
     return new_state;
@@ -236,7 +239,7 @@ function reduceSubscribeToClearBoardFailed(state, payload) {
 
     // Update the state
     new_state.app_state = LOADING_STATES.ERROR;
-    new_state.app_error_description = "Sorry, but we were unable to subscribe to receiving clear board events.  This was the reason given:" + payload.reason;
+    new_state.app_error_description = 'Sorry, but we were unable to subscribe to receiving clear board events.  This was the reason given:' + payload.reason;
 
     // Return the new state
     return new_state;
@@ -386,6 +389,6 @@ const createStoreWithMiddleware = applyMiddleware(
     loggerMiddleware // neat middleware that logs actions
 )(createStore);
 
-const estimatorApp = combineReducers({cards});
+const estimatorApp = combineReducers({ cards });
 
 export default createStoreWithMiddleware(estimatorApp);
