@@ -3,9 +3,9 @@ This is a quick-and-dirty tool for an alternative method of poker planning, usab
 
 ## Setup
 - `docker run crossbario/crossbar` from a VPS or server
-- Update the `Config.es6` with the IP (default port 8080)
-- Run `npm run build`
-- Merge `master` into `gh-pages`
+- Update `config.js` with the IP (default port 8080)
+- Run `yarn build`
+- Open `build/index.html` in a browser
 
 ## Usage
 Load this webpage in your favorite modern web browser.  No webserver is required - it can be loaded straight off 
@@ -26,7 +26,7 @@ No discussion during the first phase of the sizing exercise.
 All team members move cards around simultaneously.  Each team member simply puts a card in the column they think it
 should be.  If you disagree with its placement, just move it!
 
-If a card moves around a lot, move it to the '?' bucket.
+If a card moves around a lot (at least enough to turn red), move it to the '?' bucket.
 
 Once the team stops moving cards around, proceed to Phase 2.
 
@@ -38,9 +38,9 @@ be determined by whatever means you like - hidden voting (as in traditional poke
 Because this was a small PoC effort, in its current incarnation there are some warnings and a few important missing 
 features.  Caveat emptor.
 
-* Cards can only be added - not deleted or updated.
+* Cards can only be added or deleted - not edited.
 * There's only a single channel for all users.  That means that there's no privacy or access control for the board.
-  * If you want your own private board, you'll need to run your own [crossbar.io](http://crossbar.io) server, and update Main.jsx's `_getRealm()` and `_getWebsocketURI()` functions accordingly.
+  * If you want your own private board, you'll need to run your own [crossbar.io](http://crossbar.io) server, and edit `config.js` accordingly.
 
 > **IMPORTANT** - all state is saved in the clients' browsers!  When the last person closes their browser, the contents of
 > the table will be lost!
