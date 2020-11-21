@@ -1,34 +1,68 @@
-var path = require('path');
+const path = require('path');
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
-    entry: './src/main/main.jsx',
+    mode: 'development',
+    devtool: 'source-map',
+    entry: './src/main/Main.jsx',
     output: {
         path: __dirname,
-        filename: 'build/bundle.js'
+        filename: 'build/bundle.js',
+    },
+    resolve: {
+        alias: {
+            '~': path.resolve(__dirname, 'src/'),
+        },
+        extensions: ['.js', '.jsx'],
     },
     module: {
-        loaders: [
+        rules: [
             {
                 test: path.join(__dirname, 'src'),
                 loader: 'babel-loader',
-                query: {
-                    // https://github.com/babel/babel-loader#options
-                    cacheDirectory: true,
-                    presets: ['es2015', 'react']
-                }
+                options: {
+                    presets: [
+                        '@babel/preset-env',
+                        [
+                            '@babel/preset-react',
+                            {
+                                modules: false,
+                            },
+                        ],
+                    ],
+                },
             },
             {
                 test: /\.css$/,
-                loader: "style-loader!css-loader!autoprefixer-loader?cascade=false&browsers=last 2 version"
+                use: [
+                    {
+                        loader: 'style-loader',
+                    },
+                    {
+                        loader: 'css-loader',
+                    },
+                    {
+                        loader: 'postcss-loader',
+                    },
+                ],
             },
             {
                 test: /\.png$/,
-                loader: "url-loader?limit=100000"
+                loader: 'url-loader',
+                options: {
+                    limit: 100000,
+                },
             },
-            {
-                test: /\.json$/,
-                loader: "json"
-            }
-        ]
-    }
+        ],
+    },
+    plugins: [
+        new CopyPlugin({
+            patterns: [
+                {
+                    from: 'index.html',
+                    to: 'build',
+                },
+            ],
+        }),
+    ],
 };

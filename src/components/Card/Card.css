@@ -2,9 +2,11 @@
     border: 1px solid black;
     padding: 0.5em;
     border-radius: 0.5em;
-    display: flex;
-    flex-direction: column;
-
+    display: grid;
+    grid-template:
+        "title title" auto
+        "count delete" 1.25rem;
+    grid-auto-flow: row;
     animation-name: pulse;
     animation-duration: 0.4s;
     animation-iteration-count: 1;
@@ -21,32 +23,26 @@
 }
 
 .card-title {
-    flex: 1;
     overflow: auto;
+    grid-area: title;
 }
 
 .card-move-count {
     background-color: lightgray;
-    padding: 0.25em;
-    flex-shrink: 0;
+    grid-area: count;
+}
+
+.card-delete-button {
+    grid-area: delete;
 }
 
 .card-history {
-    flex-shrink: 0;
+    grid-column: span 2;
+    padding: 0.25rem 0.25rem 0;
 }
 
 .card-history.hidden {
     display: none;
-}
-
-.card-delete-button {
-    text-align: right;
-    display: inline;
-    position: relative;
-    height: 0;
-    top: 0.2em;
-    left: -0.2em;
-    flex-shrink: 0;
 }
 
 .card.dragging {
@@ -79,8 +75,4 @@
 .card .card-confirm-title {
     font-size: 1.5em;
     font-weight: bold;
-}
-
-.card .card-delete-button, .card .card-move-count {
-    flex-grow: 0;
 }
