@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { connectToServer } from '../actions.es6';
-import CONFIG from '../config.es6';
-import store from '../redux_store.es6';
-import App from './app.jsx';
+import { connectToServer } from '~/actions';
+import CONFIG from '~/config';
+import store from '~/redux_store';
+import App from '~/main/App';
 
-import './main.css';
+import '~/main/Main.css';
 
 ReactDOM.render((
     <Provider store={store}>
@@ -18,19 +18,19 @@ ReactDOM.render((
 store.dispatch(connectToServer(CONFIG.crossbar_uri, CONFIG.realm));
 
 // TODO: routing, to get unique boards, and to create a board
-//// 404 route
-//var NoMatch = React.createClass({
+/// / 404 route
+// let NoMatch = React.createClass({
 //    render() {
 //        return (
 //            <h1>"Sorry!"</h1>
 //        );
 //    }
-//});
+// });
 //
-//// Routing
-//ReactDOM.render((
+/// / Routing
+// ReactDOM.render((
 //    <Router>
 //        <Route path="/" component={Estimator}/>
 //        <Route path="*" component={NoMatch}/>
 //    </Router>
-//), document.getElementById('app'));
+// ), document.getElementById('app'));

@@ -1,7 +1,5 @@
-var session, subscriptions;
-
-session = null;
-subscriptions = {};
+let session = null;
+const subscriptions = {};
 
 // NOTE: Why is this state here instead of inside of Redux?
 // Unfortunately, we can't really get an immutable copy of anything related to autobahn, because autobahn uses

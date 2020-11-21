@@ -40,7 +40,7 @@ features.  Caveat emptor.
 
 * Cards can only be added - not deleted or updated.
 * There's only a single channel for all users.  That means that there's no privacy or access control for the board.
-  * If you want your own private board, you'll need to run your own [crossbar.io](http://crossbar.io) server, and update main.js's `_getRealm()` and `_getWebsocketURI()` functions accordingly.
+  * If you want your own private board, you'll need to run your own [crossbar.io](http://crossbar.io) server, and update Main.jsx's `_getRealm()` and `_getWebsocketURI()` functions accordingly.
 
 > **IMPORTANT** - all state is saved in the clients' browsers!  When the last person closes their browser, the contents of
 > the table will be lost!

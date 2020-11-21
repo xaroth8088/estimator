@@ -1,6 +1,6 @@
-import React from "react"
+import React from 'react';
 
-import "./app_error.css"
+import '~/components/AppError/AppError.css';
 
 function AppError() {
     return (

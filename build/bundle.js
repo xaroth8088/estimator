@@ -1776,10 +1776,10 @@ description:"An implementation of The Web Application Messaging Protocol (WAMP).
 
 /***/ }),
 
-/***/ "./src/components/app_error/app_error.css":
-/*!************************************************!*\
-  !*** ./src/components/app_error/app_error.css ***!
-  \************************************************/
+/***/ "./src/components/AppError/AppError.css":
+/*!**********************************************!*\
+  !*** ./src/components/AppError/AppError.css ***!
+  \**********************************************/
 /*! namespace exports */
 /*! export default [provided] [no usage info] [missing usage info prevents renaming] */
 /*! other exports [not provided] [no usage info] */
@@ -1793,20 +1793,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_app_error_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/postcss-loader/dist/cjs.js!./app_error.css */ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/app_error/app_error.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_AppError_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/postcss-loader/dist/cjs.js!./AppError.css */ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/AppError/AppError.css");
 ;
 
 var options = {};
 options.insert = "head";
 options.singleton = false;
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_app_error_css__WEBPACK_IMPORTED_MODULE_1__.default, options);
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_app_error_css__WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_AppError_css__WEBPACK_IMPORTED_MODULE_1__.default, options);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_AppError_css__WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
 
 /***/ }),
 
-/***/ "./src/components/card/card.css":
+/***/ "./src/components/Card/Card.css":
 /*!**************************************!*\
-  !*** ./src/components/card/card.css ***!
+  !*** ./src/components/Card/Card.css ***!
   \**************************************/
 /*! namespace exports */
 /*! export default [provided] [no usage info] [missing usage info prevents renaming] */
@@ -1821,21 +1821,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_card_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/postcss-loader/dist/cjs.js!./card.css */ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/card/card.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_Card_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/postcss-loader/dist/cjs.js!./Card.css */ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/Card/Card.css");
 ;
 
 var options = {};
 options.insert = "head";
 options.singleton = false;
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_card_css__WEBPACK_IMPORTED_MODULE_1__.default, options);
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_card_css__WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_Card_css__WEBPACK_IMPORTED_MODULE_1__.default, options);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_Card_css__WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
 
 /***/ }),
 
-/***/ "./src/components/clear_board/clear_board.css":
-/*!****************************************************!*\
-  !*** ./src/components/clear_board/clear_board.css ***!
-  \****************************************************/
+/***/ "./src/components/ClearBoard/ClearBoard.css":
+/*!**************************************************!*\
+  !*** ./src/components/ClearBoard/ClearBoard.css ***!
+  \**************************************************/
 /*! namespace exports */
 /*! export default [provided] [no usage info] [missing usage info prevents renaming] */
 /*! other exports [not provided] [no usage info] */
@@ -1849,20 +1849,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_clear_board_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/postcss-loader/dist/cjs.js!./clear_board.css */ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/clear_board/clear_board.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ClearBoard_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/postcss-loader/dist/cjs.js!./ClearBoard.css */ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/ClearBoard/ClearBoard.css");
 ;
 
 var options = {};
 options.insert = "head";
 options.singleton = false;
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_clear_board_css__WEBPACK_IMPORTED_MODULE_1__.default, options);
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_clear_board_css__WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ClearBoard_css__WEBPACK_IMPORTED_MODULE_1__.default, options);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ClearBoard_css__WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
 
 /***/ }),
 
-/***/ "./src/components/column/column.css":
+/***/ "./src/components/Column/Column.css":
 /*!******************************************!*\
-  !*** ./src/components/column/column.css ***!
+  !*** ./src/components/Column/Column.css ***!
   \******************************************/
 /*! namespace exports */
 /*! export default [provided] [no usage info] [missing usage info prevents renaming] */
@@ -1877,21 +1877,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_column_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/postcss-loader/dist/cjs.js!./column.css */ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/column/column.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_Column_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/postcss-loader/dist/cjs.js!./Column.css */ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/Column/Column.css");
 ;
 
 var options = {};
 options.insert = "head";
 options.singleton = false;
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_column_css__WEBPACK_IMPORTED_MODULE_1__.default, options);
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_column_css__WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_Column_css__WEBPACK_IMPORTED_MODULE_1__.default, options);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_Column_css__WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
 
 /***/ }),
 
-/***/ "./src/components/create_card/create_card.css":
-/*!****************************************************!*\
-  !*** ./src/components/create_card/create_card.css ***!
-  \****************************************************/
+/***/ "./src/components/CreateCard/CreateCard.css":
+/*!**************************************************!*\
+  !*** ./src/components/CreateCard/CreateCard.css ***!
+  \**************************************************/
 /*! namespace exports */
 /*! export default [provided] [no usage info] [missing usage info prevents renaming] */
 /*! other exports [not provided] [no usage info] */
@@ -1905,20 +1905,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_create_card_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/postcss-loader/dist/cjs.js!./create_card.css */ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/create_card/create_card.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_CreateCard_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/postcss-loader/dist/cjs.js!./CreateCard.css */ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/CreateCard/CreateCard.css");
 ;
 
 var options = {};
 options.insert = "head";
 options.singleton = false;
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_create_card_css__WEBPACK_IMPORTED_MODULE_1__.default, options);
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_create_card_css__WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_CreateCard_css__WEBPACK_IMPORTED_MODULE_1__.default, options);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_CreateCard_css__WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
 
 /***/ }),
 
-/***/ "./src/components/estimator/estimator.css":
+/***/ "./src/components/Estimator/Estimator.css":
 /*!************************************************!*\
-  !*** ./src/components/estimator/estimator.css ***!
+  !*** ./src/components/Estimator/Estimator.css ***!
   \************************************************/
 /*! namespace exports */
 /*! export default [provided] [no usage info] [missing usage info prevents renaming] */
@@ -1933,20 +1933,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_estimator_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/postcss-loader/dist/cjs.js!./estimator.css */ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/estimator/estimator.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_Estimator_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/postcss-loader/dist/cjs.js!./Estimator.css */ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/Estimator/Estimator.css");
 ;
 
 var options = {};
 options.insert = "head";
 options.singleton = false;
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_estimator_css__WEBPACK_IMPORTED_MODULE_1__.default, options);
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_estimator_css__WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_Estimator_css__WEBPACK_IMPORTED_MODULE_1__.default, options);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_Estimator_css__WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
 
 /***/ }),
 
-/***/ "./src/components/loading/loading.css":
+/***/ "./src/components/Loading/Loading.css":
 /*!********************************************!*\
-  !*** ./src/components/loading/loading.css ***!
+  !*** ./src/components/Loading/Loading.css ***!
   \********************************************/
 /*! namespace exports */
 /*! export default [provided] [no usage info] [missing usage info prevents renaming] */
@@ -1961,20 +1961,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_loading_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/postcss-loader/dist/cjs.js!./loading.css */ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/loading/loading.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_Loading_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/postcss-loader/dist/cjs.js!./Loading.css */ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/Loading/Loading.css");
 ;
 
 var options = {};
 options.insert = "head";
 options.singleton = false;
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_loading_css__WEBPACK_IMPORTED_MODULE_1__.default, options);
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_loading_css__WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_Loading_css__WEBPACK_IMPORTED_MODULE_1__.default, options);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_Loading_css__WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
 
 /***/ }),
 
-/***/ "./src/main/main.css":
+/***/ "./src/main/Main.css":
 /*!***************************!*\
-  !*** ./src/main/main.css ***!
+  !*** ./src/main/Main.css ***!
   \***************************/
 /*! namespace exports */
 /*! export default [provided] [no usage info] [missing usage info prevents renaming] */
@@ -1989,21 +1989,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_main_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!../../node_modules/postcss-loader/dist/cjs.js!./main.css */ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/main/main.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_Main_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!../../node_modules/postcss-loader/dist/cjs.js!./Main.css */ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/main/Main.css");
 ;
 
 var options = {};
 options.insert = "head";
 options.singleton = false;
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_main_css__WEBPACK_IMPORTED_MODULE_1__.default, options);
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_main_css__WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_Main_css__WEBPACK_IMPORTED_MODULE_1__.default, options);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_Main_css__WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
 
 /***/ }),
 
-/***/ "./src/actions.es6":
-/*!*************************!*\
-  !*** ./src/actions.es6 ***!
-  \*************************/
+/***/ "./src/actions.js":
+/*!************************!*\
+  !*** ./src/actions.js ***!
+  \************************/
 /*! namespace exports */
 /*! export ADD_CARD_RECEIVED [provided] [no usage info] [missing usage info prevents renaming] */
 /*! export CLEAR_BOARD_RECEIVED [provided] [no usage info] [missing usage info prevents renaming] */
@@ -2102,18 +2102,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "moveCardReceived": () => /* binding */ moveCardReceived,
 /* harmony export */   "deleteCardReceived": () => /* binding */ deleteCardReceived,
 /* harmony export */   "clearBoardReceived": () => /* binding */ clearBoardReceived,
-/* harmony export */   "connectToServer": () => /* binding */ connectToServer,
-/* harmony export */   "subscribeToInitialState": () => /* binding */ subscribeToInitialState,
-/* harmony export */   "requestInitialState": () => /* binding */ requestInitialState,
-/* harmony export */   "initialStateTimeout": () => /* binding */ initialStateTimeout,
-/* harmony export */   "initialStateReceived": () => /* binding */ initialStateReceived,
-/* harmony export */   "unsubscribeFromInitialState": () => /* binding */ unsubscribeFromInitialState,
-/* harmony export */   "unsubscribedFromInitialState": () => /* binding */ unsubscribedFromInitialState,
 /* harmony export */   "subscribeToRequestInitialState": () => /* binding */ subscribeToRequestInitialState,
 /* harmony export */   "subscribeToAddCard": () => /* binding */ subscribeToAddCard,
 /* harmony export */   "subscribeToMoveCard": () => /* binding */ subscribeToMoveCard,
 /* harmony export */   "subscribeToDeleteCard": () => /* binding */ subscribeToDeleteCard,
 /* harmony export */   "subscribeToClearBoard": () => /* binding */ subscribeToClearBoard,
+/* harmony export */   "unsubscribedFromInitialState": () => /* binding */ unsubscribedFromInitialState,
+/* harmony export */   "unsubscribeFromInitialState": () => /* binding */ unsubscribeFromInitialState,
+/* harmony export */   "initialStateReceived": () => /* binding */ initialStateReceived,
+/* harmony export */   "initialStateTimeout": () => /* binding */ initialStateTimeout,
+/* harmony export */   "requestInitialState": () => /* binding */ requestInitialState,
+/* harmony export */   "subscribeToInitialState": () => /* binding */ subscribeToInitialState,
+/* harmony export */   "connectToServer": () => /* binding */ connectToServer,
 /* harmony export */   "addCard": () => /* binding */ addCard,
 /* harmony export */   "moveCard": () => /* binding */ moveCard,
 /* harmony export */   "deleteCard": () => /* binding */ deleteCard,
@@ -2121,9 +2121,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var autobahn_browser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! autobahn-browser */ "./node_modules/autobahn-browser/autobahn.min.js");
 /* harmony import */ var autobahn_browser__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(autobahn_browser__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _constants_es6__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./constants.es6 */ "./src/constants.es6");
-/* harmony import */ var _crossbar_connector_es6__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./crossbar_connector.es6 */ "./src/crossbar_connector.es6");
 /* harmony import */ var uuid__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! uuid */ "./node_modules/uuid/dist/esm-browser/v4.js");
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ~/constants */ "./src/constants.js");
+/* harmony import */ var _crossbar_connector__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ~/crossbar_connector */ "./src/crossbar_connector.js");
 ;
 
 
@@ -2161,7 +2161,7 @@ function connectionClosed(reason) {
   return {
     type: CONNECTION_CLOSED,
     payload: {
-      reason: reason
+      reason
     }
   };
 }
@@ -2175,7 +2175,7 @@ function subscribeToInitialStateFailed(reason) {
   return {
     type: SUBSCRIBE_TO_INITIAL_STATE_FAILED,
     payload: {
-      reason: reason
+      reason
     }
   };
 }
@@ -2183,7 +2183,7 @@ function setInitialStateTimer(timer) {
   return {
     type: SET_INITIAL_STATE_TIMER,
     payload: {
-      timer: timer
+      timer
     }
   };
 }
@@ -2197,7 +2197,7 @@ function unsubscribeFromInitialStateFailed(reason) {
   return {
     type: UNSUBSCRIBE_FROM_INITIAL_STATE_FAILED,
     payload: {
-      reason: reason
+      reason
     }
   };
 }
@@ -2205,7 +2205,7 @@ function subscribeToRequestInitialStateFailed(reason) {
   return {
     type: SUBSCRIBE_TO_ADD_CARD_FAILED,
     payload: {
-      reason: reason
+      reason
     }
   };
 }
@@ -2213,7 +2213,7 @@ function subscribeToAddCardFailed(reason) {
   return {
     type: SUBSCRIBE_TO_ADD_CARD_FAILED,
     payload: {
-      reason: reason
+      reason
     }
   };
 }
@@ -2221,7 +2221,7 @@ function subscribeToMoveCardFailed(reason) {
   return {
     type: SUBSCRIBE_TO_MOVE_CARD_FAILED,
     payload: {
-      reason: reason
+      reason
     }
   };
 }
@@ -2229,7 +2229,7 @@ function subscribeToDeleteCardFailed(reason) {
   return {
     type: SUBSCRIBE_TO_DELETE_CARD_FAILED,
     payload: {
-      reason: reason
+      reason
     }
   };
 }
@@ -2237,7 +2237,7 @@ function subscribeToClearBoardFailed(reason) {
   return {
     type: SUBSCRIBE_TO_CLEAR_BOARD_FAILED,
     payload: {
-      reason: reason
+      reason
     }
   };
 }
@@ -2245,8 +2245,8 @@ function setInitialState(cards, columns) {
   return {
     type: SET_INITIAL_STATE,
     payload: {
-      cards: cards,
-      columns: columns
+      cards,
+      columns
     }
   };
 }
@@ -2266,24 +2266,24 @@ function addCardReceived(card) {
   return {
     type: ADD_CARD_RECEIVED,
     payload: {
-      card: card
+      card
     }
   };
 }
-function moveCardReceived(card_id, to_column) {
+function moveCardReceived(cardId, toColumn) {
   return {
     type: MOVE_CARD_RECEIVED,
     payload: {
-      card_id: card_id,
-      to_column: to_column
+      cardId,
+      toColumn
     }
   };
 }
-function deleteCardReceived(card_id) {
+function deleteCardReceived(cardId) {
   return {
     type: DELETE_CARD_RECEIVED,
     payload: {
-      card_id: card_id
+      cardId
     }
   };
 }
@@ -2294,114 +2294,59 @@ function clearBoardReceived() {
   };
 } // "Thunks"
 
-function connectToServer(url, realm) {
-  return function (dispatch) {
-    var connection; // Update state to 'connecting...'
-
-    dispatch(connectingToServer()); // init the server
-
-    connection = new autobahn_browser__WEBPACK_IMPORTED_MODULE_0__.Connection({
-      url: url,
-      realm: realm
-    });
-
-    connection.onopen = session => {
-      (0,_crossbar_connector_es6__WEBPACK_IMPORTED_MODULE_2__.registerSession)(session);
-      dispatch(subscribeToInitialState());
-    };
-
-    connection.onclose = reason => {
-      dispatch(connectionClosed(reason));
-    }; // Actually connect
-
-
-    console.log("Connecting to WAMP router...");
-    connection.open();
-  };
-}
-function subscribeToInitialState() {
-  return function (dispatch, getState) {
-    var state;
-    state = getState();
-
-    if (state.cards.app_state !== _constants_es6__WEBPACK_IMPORTED_MODULE_1__.LOADING_STATES.CONNECTING_TO_SERVER) {
-      dispatch(connectionClosed("Illegal state transition in subscribeToInitialState.  From:" + state.app_state));
-      return;
-    }
-
-    dispatch(subscribingToInitialState());
-    (0,_crossbar_connector_es6__WEBPACK_IMPORTED_MODULE_2__.getSession)().subscribe("estimator.set_initial_state", data => {
-      dispatch(initialStateReceived(data[0], data[1]));
-      dispatch(unsubscribeFromInitialState());
-    }).then(subscription => {
-      (0,_crossbar_connector_es6__WEBPACK_IMPORTED_MODULE_2__.registerSubscription)(_constants_es6__WEBPACK_IMPORTED_MODULE_1__.INITIAL_STATE_SUBSCRIPTION, subscription);
-      dispatch(requestInitialState());
-    }, error => {
-      dispatch(subscribeToInitialStateFailed(error));
+function subscribeToRequestInitialState() {
+  return (dispatch, getState) => {
+    // Sub to requests for initial state, for future clients
+    (0,_crossbar_connector__WEBPACK_IMPORTED_MODULE_2__.getSession)().subscribe('Estimator.request_initial_state', () => {
+      const state = getState();
+      (0,_crossbar_connector__WEBPACK_IMPORTED_MODULE_2__.getSession)().publish('Estimator.set_initial_state', [state.cards.cards, state.cards.columns]);
+    }).then(() => {}, reason => {
+      dispatch(subscribeToRequestInitialStateFailed(reason));
     });
   };
 }
-function requestInitialState() {
-  return function (dispatch) {
-    var timer;
-    dispatch(gettingInitialState()); // Broadcast out a request for getting the initial state (we'll take whoever comes back first as our state)
-
-    (0,_crossbar_connector_es6__WEBPACK_IMPORTED_MODULE_2__.getSession)().publish("estimator.request_initial_state", []); // We may be the first people in the room, in which case our request to get the initial state will never return
-    // So, set a timer instead to wait for a little while before just assuming we're alone
-
-    timer = setTimeout(() => {
-      dispatch(initialStateTimeout());
-    }, 5000);
-    dispatch(setInitialStateTimer(timer));
-  };
-}
-function initialStateTimeout() {
-  return function (dispatch, getState) {
-    // Assume we're alone on the server now, and so just leave the board state at its defaults and move on in the
-    // state machine.
-    clearTimeout(getState().cards.initial_state_timer);
-    dispatch(setInitialStateTimer(null));
-    dispatch(unsubscribeFromInitialState());
-  };
-}
-function initialStateReceived(cards, columns) {
-  return function (dispatch, getState) {
-    var state;
-    state = getState();
-
-    if (state.cards.app_state !== _constants_es6__WEBPACK_IMPORTED_MODULE_1__.LOADING_STATES.GETTING_INITIAL_STATE) {
-      // This might happen in a race condition, but isn't a big deal so just skip out
-      return;
-    }
-
-    clearTimeout(state.cards.initial_state_timer);
-    dispatch(setInitialStateTimer(null));
-    dispatch(setInitialState(cards, columns));
-    dispatch(unsubscribeFromInitialState());
-  };
-}
-function unsubscribeFromInitialState() {
-  return function (dispatch, getState) {
-    var state;
-    state = getState();
-
-    if (state.cards.app_state !== _constants_es6__WEBPACK_IMPORTED_MODULE_1__.LOADING_STATES.GETTING_INITIAL_STATE) {
-      dispatch(connectionClosed("Illegal state transition in unsubscribeFromInitialState.  From:" + state.app_state));
-      return;
-    } // Unsub from set_initial_state, since we won't need it any more
-
-
-    (0,_crossbar_connector_es6__WEBPACK_IMPORTED_MODULE_2__.getSession)().unsubscribe((0,_crossbar_connector_es6__WEBPACK_IMPORTED_MODULE_2__.getSubscription)(_constants_es6__WEBPACK_IMPORTED_MODULE_1__.INITIAL_STATE_SUBSCRIPTION)).then(() => {
-      dispatch(unsubscribedFromInitialState());
-    }, error => {
-      dispatch(unsubscribeFromInitialStateFailed(error));
+function subscribeToAddCard() {
+  return dispatch => {
+    (0,_crossbar_connector__WEBPACK_IMPORTED_MODULE_2__.getSession)().subscribe('Estimator.new_card', data => {
+      const card = data[0];
+      dispatch(addCardReceived(card));
+    }).then(() => {}, reason => {
+      dispatch(subscribeToAddCardFailed(reason));
     });
-    dispatch(unsubscribingFromInitialState());
-    (0,_crossbar_connector_es6__WEBPACK_IMPORTED_MODULE_2__.unregisterSubscription)(_constants_es6__WEBPACK_IMPORTED_MODULE_1__.INITIAL_STATE_SUBSCRIPTION);
+  };
+}
+function subscribeToMoveCard() {
+  return dispatch => {
+    (0,_crossbar_connector__WEBPACK_IMPORTED_MODULE_2__.getSession)().subscribe('Estimator.move_card', data => {
+      const cardId = data[0];
+      const toColumn = data[1];
+      dispatch(moveCardReceived(cardId, toColumn));
+    }).then(null, reason => {
+      dispatch(subscribeToMoveCardFailed(reason));
+    });
+  };
+}
+function subscribeToDeleteCard() {
+  return dispatch => {
+    (0,_crossbar_connector__WEBPACK_IMPORTED_MODULE_2__.getSession)().subscribe('Estimator.delete_card', data => {
+      const cardId = data[0];
+      dispatch(deleteCardReceived(cardId));
+    }).then(null, reason => {
+      dispatch(subscribeToDeleteCardFailed(reason));
+    });
+  };
+}
+function subscribeToClearBoard() {
+  return dispatch => {
+    (0,_crossbar_connector__WEBPACK_IMPORTED_MODULE_2__.getSession)().subscribe('Estimator.ClearBoard', () => {
+      dispatch(clearBoardReceived());
+    }).then(null, reason => {
+      dispatch(subscribeToClearBoardFailed(reason));
+    });
   };
 }
 function unsubscribedFromInitialState() {
-  return function (dispatch) {
+  return dispatch => {
     // We're ready to start working now, so go subscribe to all the various events we'll want to receive
     dispatch(subscribeToRequestInitialState());
     dispatch(subscribeToAddCard());
@@ -2411,104 +2356,148 @@ function unsubscribedFromInitialState() {
     dispatch(initializationComplete());
   };
 }
-function subscribeToRequestInitialState() {
-  return function (dispatch, getState) {
-    // Sub to requests for initial state, for future clients
-    (0,_crossbar_connector_es6__WEBPACK_IMPORTED_MODULE_2__.getSession)().subscribe("estimator.request_initial_state", data => {
-      var state;
-      state = getState();
-      (0,_crossbar_connector_es6__WEBPACK_IMPORTED_MODULE_2__.getSession)().publish("estimator.set_initial_state", [state.cards.cards, state.cards.columns]);
-    }).then(() => {}, reason => {
-      dispatch(subscribeToRequestInitialStateFailed(reason));
+function unsubscribeFromInitialState() {
+  return (dispatch, getState) => {
+    const state = getState();
+
+    if (state.cards.appState !== _constants__WEBPACK_IMPORTED_MODULE_1__.LOADING_STATES.GETTING_INITIAL_STATE) {
+      dispatch(connectionClosed(`Illegal state transition in unsubscribeFromInitialState.  From:${state.appState}`));
+      return;
+    } // Unsub from set_initial_state, since we won't need it any more
+
+
+    (0,_crossbar_connector__WEBPACK_IMPORTED_MODULE_2__.getSession)().unsubscribe((0,_crossbar_connector__WEBPACK_IMPORTED_MODULE_2__.getSubscription)(_constants__WEBPACK_IMPORTED_MODULE_1__.INITIAL_STATE_SUBSCRIPTION)).then(() => {
+      dispatch(unsubscribedFromInitialState());
+    }, error => {
+      dispatch(unsubscribeFromInitialStateFailed(error));
+    });
+    dispatch(unsubscribingFromInitialState());
+    (0,_crossbar_connector__WEBPACK_IMPORTED_MODULE_2__.unregisterSubscription)(_constants__WEBPACK_IMPORTED_MODULE_1__.INITIAL_STATE_SUBSCRIPTION);
+  };
+}
+function initialStateReceived(cards, columns) {
+  return (dispatch, getState) => {
+    const state = getState();
+
+    if (state.cards.appState !== _constants__WEBPACK_IMPORTED_MODULE_1__.LOADING_STATES.GETTING_INITIAL_STATE) {
+      // This might happen in a race condition, but isn't a big deal so just skip out
+      return;
+    }
+
+    clearTimeout(state.cards.initialStateTimer);
+    dispatch(setInitialStateTimer(null));
+    dispatch(setInitialState(cards, columns));
+    dispatch(unsubscribeFromInitialState());
+  };
+}
+function initialStateTimeout() {
+  return (dispatch, getState) => {
+    // Assume we're alone on the server now, and so just leave the board state at its defaults and move on in the
+    // state machine.
+    clearTimeout(getState().cards.initialStateTimer);
+    dispatch(setInitialStateTimer(null));
+    dispatch(unsubscribeFromInitialState());
+  };
+}
+function requestInitialState() {
+  return dispatch => {
+    dispatch(gettingInitialState()); // Broadcast out a request for getting the initial state (we'll take whoever comes back first as our state)
+
+    (0,_crossbar_connector__WEBPACK_IMPORTED_MODULE_2__.getSession)().publish('Estimator.request_initial_state', []); // We may be the first people in the room, in which case our request to get the initial state will never return
+    // So, set a timer instead to wait for a little while before just assuming we're alone
+
+    const timer = setTimeout(() => {
+      dispatch(initialStateTimeout());
+    }, 5000);
+    dispatch(setInitialStateTimer(timer));
+  };
+}
+function subscribeToInitialState() {
+  return (dispatch, getState) => {
+    const state = getState();
+
+    if (state.cards.appState !== _constants__WEBPACK_IMPORTED_MODULE_1__.LOADING_STATES.CONNECTING_TO_SERVER) {
+      dispatch(connectionClosed(`Illegal state transition in subscribeToInitialState.  From:${state.appState}`));
+      return;
+    }
+
+    dispatch(subscribingToInitialState());
+    (0,_crossbar_connector__WEBPACK_IMPORTED_MODULE_2__.getSession)().subscribe('Estimator.set_initial_state', data => {
+      dispatch(initialStateReceived(data[0], data[1]));
+      dispatch(unsubscribeFromInitialState());
+    }).then(subscription => {
+      (0,_crossbar_connector__WEBPACK_IMPORTED_MODULE_2__.registerSubscription)(_constants__WEBPACK_IMPORTED_MODULE_1__.INITIAL_STATE_SUBSCRIPTION, subscription);
+      dispatch(requestInitialState());
+    }, error => {
+      dispatch(subscribeToInitialStateFailed(error));
     });
   };
 }
-function subscribeToAddCard() {
-  return function (dispatch) {
-    (0,_crossbar_connector_es6__WEBPACK_IMPORTED_MODULE_2__.getSession)().subscribe("estimator.new_card", data => {
-      var card;
-      card = data[0];
-      dispatch(addCardReceived(card));
-    }).then(() => {}, reason => {
-      dispatch(subscribeToAddCardFailed(reason));
+function connectToServer(url, realm) {
+  return dispatch => {
+    // Update state to 'connecting...'
+    dispatch(connectingToServer()); // init the server
+
+    const connection = new autobahn_browser__WEBPACK_IMPORTED_MODULE_0__.Connection({
+      url,
+      realm
     });
-  };
-}
-function subscribeToMoveCard() {
-  return function (dispatch) {
-    (0,_crossbar_connector_es6__WEBPACK_IMPORTED_MODULE_2__.getSession)().subscribe("estimator.move_card", data => {
-      var card_id, to_column;
-      card_id = data[0];
-      to_column = data[1];
-      dispatch(moveCardReceived(card_id, to_column));
-    }).then(null, reason => {
-      dispatch(subscribeToMoveCardFailed(reason));
-    });
-  };
-}
-function subscribeToDeleteCard() {
-  return function (dispatch) {
-    (0,_crossbar_connector_es6__WEBPACK_IMPORTED_MODULE_2__.getSession)().subscribe("estimator.delete_card", data => {
-      var card_id;
-      card_id = data[0];
-      dispatch(deleteCardReceived(card_id));
-    }).then(null, reason => {
-      dispatch(subscribeToDeleteCardFailed(reason));
-    });
-  };
-}
-function subscribeToClearBoard() {
-  return function (dispatch) {
-    (0,_crossbar_connector_es6__WEBPACK_IMPORTED_MODULE_2__.getSession)().subscribe("estimator.clear_board", data => {
-      dispatch(clearBoardReceived());
-    }).then(null, reason => {
-      dispatch(subscribeToClearBoardFailed(reason));
-    });
+
+    connection.onopen = session => {
+      (0,_crossbar_connector__WEBPACK_IMPORTED_MODULE_2__.registerSession)(session);
+      dispatch(subscribeToInitialState());
+    };
+
+    connection.onclose = reason => {
+      dispatch(connectionClosed(reason));
+    }; // Actually connect
+
+
+    connection.open();
   };
 }
 function addCard(title) {
-  return function (dispatch) {
-    var card; // Create the card locally
-
-    card = {
-      card_id: (0,uuid__WEBPACK_IMPORTED_MODULE_3__.default)(),
-      title: title,
+  return dispatch => {
+    // Create the Card locally
+    const card = {
+      cardId: (0,uuid__WEBPACK_IMPORTED_MODULE_3__.default)(),
+      title,
       history: []
     };
-    dispatch(addCardReceived(card)); // Broadcast to other clients that the card has been created
+    dispatch(addCardReceived(card)); // Broadcast to other clients that the Card has been created
 
-    (0,_crossbar_connector_es6__WEBPACK_IMPORTED_MODULE_2__.getSession)().publish("estimator.new_card", [card]);
+    (0,_crossbar_connector__WEBPACK_IMPORTED_MODULE_2__.getSession)().publish('Estimator.new_card', [card]);
   };
 }
-function moveCard(card_id, to_column) {
-  return function (dispatch) {
-    // Move the card locally
-    dispatch(moveCardReceived(card_id, to_column)); // Broadcast to other clients that the card has been moved
+function moveCard(cardId, toColumn) {
+  return dispatch => {
+    // Move the Card locally
+    dispatch(moveCardReceived(cardId, toColumn)); // Broadcast to other clients that the Card has been moved
 
-    (0,_crossbar_connector_es6__WEBPACK_IMPORTED_MODULE_2__.getSession)().publish("estimator.move_card", [card_id, to_column]);
+    (0,_crossbar_connector__WEBPACK_IMPORTED_MODULE_2__.getSession)().publish('Estimator.move_card', [cardId, toColumn]);
   };
 }
-function deleteCard(card_id) {
-  return function (dispatch) {
-    // Delete the card locally
-    dispatch(deleteCardReceived(card_id)); // Broadcast to other clients that the card has been deleted
+function deleteCard(cardId) {
+  return dispatch => {
+    // Delete the Card locally
+    dispatch(deleteCardReceived(cardId)); // Broadcast to other clients that the Card has been deleted
 
-    (0,_crossbar_connector_es6__WEBPACK_IMPORTED_MODULE_2__.getSession)().publish("estimator.delete_card", [card_id]);
+    (0,_crossbar_connector__WEBPACK_IMPORTED_MODULE_2__.getSession)().publish('Estimator.delete_card', [cardId]);
   };
 }
 function clearBoard() {
-  return function (dispatch) {
+  return dispatch => {
     dispatch(clearBoardReceived());
-    (0,_crossbar_connector_es6__WEBPACK_IMPORTED_MODULE_2__.getSession)().publish("estimator.clear_board", []);
+    (0,_crossbar_connector__WEBPACK_IMPORTED_MODULE_2__.getSession)().publish('Estimator.ClearBoard', []);
   };
 }
 
 /***/ }),
 
-/***/ "./src/components/app_error/app_error.jsx":
-/*!************************************************!*\
-  !*** ./src/components/app_error/app_error.jsx ***!
-  \************************************************/
+/***/ "./src/components/AppError/AppError.jsx":
+/*!**********************************************!*\
+  !*** ./src/components/AppError/AppError.jsx ***!
+  \**********************************************/
 /*! namespace exports */
 /*! export default [provided] [no usage info] [missing usage info prevents renaming] */
 /*! other exports [not provided] [no usage info] */
@@ -2521,7 +2510,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _app_error_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app_error.css */ "./src/components/app_error/app_error.css");
+/* harmony import */ var _components_AppError_AppError_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ~/components/AppError/AppError.css */ "./src/components/AppError/AppError.css");
 ;
 
 
@@ -2535,14 +2524,14 @@ function AppError() {
 
 /***/ }),
 
-/***/ "./src/components/card/card.jsx":
+/***/ "./src/components/Card/Card.jsx":
 /*!**************************************!*\
-  !*** ./src/components/card/card.jsx ***!
+  !*** ./src/components/Card/Card.jsx ***!
   \**************************************/
 /*! namespace exports */
 /*! export default [provided] [no usage info] [missing usage info prevents renaming] */
 /*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/*! runtime requirements: __webpack_require__, __webpack_require__.n, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -2551,12 +2540,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_dnd__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-dnd */ "./node_modules/react-dnd/dist/esm/index.js");
-/* harmony import */ var _actions_es6__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../actions.es6 */ "./src/actions.es6");
-/* harmony import */ var _constants_es6__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../constants.es6 */ "./src/constants.es6");
-/* harmony import */ var _redux_store_es6__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../redux_store.es6 */ "./src/redux_store.es6");
-/* harmony import */ var _card_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./card.css */ "./src/components/card/card.css");
+/* harmony import */ var react_dnd__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-dnd */ "./node_modules/react-dnd/dist/esm/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _actions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ~/actions */ "./src/actions.js");
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ~/constants */ "./src/constants.js");
+/* harmony import */ var _redux_store__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ~/redux_store */ "./src/redux_store.js");
+/* harmony import */ var _components_Card_Card_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ~/components/Card/Card.css */ "./src/components/Card/Card.css");
 ;
+
 
 
 
@@ -2570,78 +2562,89 @@ function Card({
   const [confirmingDelete, setConfirmingDelete] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
   const [{
     isDragging
-  }, drag] = (0,react_dnd__WEBPACK_IMPORTED_MODULE_5__.useDrag)({
+  }, drag] = (0,react_dnd__WEBPACK_IMPORTED_MODULE_6__.useDrag)({
     item: {
       card,
-      type: _constants_es6__WEBPACK_IMPORTED_MODULE_2__.ItemTypes.CARD
+      type: _constants__WEBPACK_IMPORTED_MODULE_3__.ItemTypes.CARD
     },
     collect: monitor => ({
       isDragging: !!monitor.isDragging()
     })
   });
-  var card_class, history_class;
-  card_class = 'card';
+  let cardClass;
+  let historyClass;
+  cardClass = 'card';
 
   if (isDragging === true) {
-    card_class += ' dragging';
+    cardClass += ' dragging';
   }
 
   if (card.history.length > 5) {
-    card_class += ' warning';
+    cardClass += ' warning';
   }
 
-  history_class = 'card-history';
+  historyClass = 'card-history';
 
   if (showHistory === false) {
-    history_class += ' hidden';
+    historyClass += ' hidden';
   }
 
   if (confirmingDelete === true) {
-    card_class += ' confirm_delete';
+    cardClass += ' confirm_delete';
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-      className: card_class
+      className: cardClass
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
       className: "card-confirm-title"
     }, "Confirm Delete?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+      type: "button",
       onClick: () => {
-        _redux_store_es6__WEBPACK_IMPORTED_MODULE_3__.default.dispatch((0,_actions_es6__WEBPACK_IMPORTED_MODULE_1__.deleteCard)(card.card_id));
+        _redux_store__WEBPACK_IMPORTED_MODULE_4__.default.dispatch((0,_actions__WEBPACK_IMPORTED_MODULE_2__.deleteCard)(card.cardId));
       },
       className: "card-confirm-button"
     }, "Delete!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+      type: "button",
       onClick: () => setConfirmingDelete(false),
       className: "card-cancel-button"
     }, "Nevermind"));
-  } else {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-      className: card_class,
-      ref: drag
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-      className: "card-title"
-    }, card.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-      className: "card-delete-button"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
-      onClick: () => setConfirmingDelete(true)
-    }, "Delete")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-      className: "card-move-count",
-      onClick: () => setShowHistory(!showHistory)
-    }, card.history.length), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-      className: history_class
-    }, card.history.join(', ')));
   }
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: cardClass,
+    ref: drag
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "card-title"
+  }, card.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+    type: "button",
+    className: "card-move-count",
+    onClick: () => setShowHistory(!showHistory)
+  }, card.history.length), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+    type: "button",
+    className: "card-delete-button",
+    onClick: () => setConfirmingDelete(true)
+  }, "Delete"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: historyClass
+  }, card.history.join(', ')));
 }
 
+Card.propTypes = {
+  card: prop_types__WEBPACK_IMPORTED_MODULE_1___default().shape({
+    cardId: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().string.isRequired),
+    history: prop_types__WEBPACK_IMPORTED_MODULE_1___default().arrayOf((prop_types__WEBPACK_IMPORTED_MODULE_1___default().string)).isRequired,
+    title: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().string.isRequired)
+  }).isRequired
+};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Card);
 
 /***/ }),
 
-/***/ "./src/components/clear_board/clear_board.jsx":
-/*!****************************************************!*\
-  !*** ./src/components/clear_board/clear_board.jsx ***!
-  \****************************************************/
+/***/ "./src/components/ClearBoard/ClearBoard.jsx":
+/*!**************************************************!*\
+  !*** ./src/components/ClearBoard/ClearBoard.jsx ***!
+  \**************************************************/
 /*! namespace exports */
 /*! export default [provided] [no usage info] [missing usage info prevents renaming] */
 /*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/*! runtime requirements: __webpack_require__, __webpack_require__.n, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -2650,55 +2653,64 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _clear_board_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./clear_board.css */ "./src/components/clear_board/clear_board.css");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_ClearBoard_ClearBoard_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ~/components/ClearBoard/ClearBoard.css */ "./src/components/ClearBoard/ClearBoard.css");
 ;
+
 
 
 function ClearBoard({
   onClearBoard
 }) {
   const [confirming, setConfirming] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
-  var class_name;
-  class_name = 'clear_board';
+  let className;
+  className = 'clear_board';
 
   if (confirming === true) {
-    class_name += ' clear_board-confirming';
+    className += ' clear_board-confirming';
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-      className: class_name
+      className: className
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
       className: "clear_board-confirm-title"
     }, "Confirm deleting all cards?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+      type: "button",
       onClick: () => {
         setConfirming(false);
         onClearBoard();
       },
       className: "clear_board-confirm-button"
     }, "Nuke 'em!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+      type: "button",
       onClick: () => setConfirming(false),
       className: "clear_board-cancel-button"
     }, "Nevermind"));
-  } else {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-      className: class_name
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
-      onClick: () => setConfirming(true),
-      className: "clear_board-button"
-    }, "Clear Board"));
   }
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: className
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+    type: "button",
+    onClick: () => setConfirming(true),
+    className: "clear_board-button"
+  }, "Clear Board"));
 }
 
+ClearBoard.propTypes = {
+  onClearBoard: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().func.isRequired)
+};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ClearBoard);
 
 /***/ }),
 
-/***/ "./src/components/column/column.jsx":
+/***/ "./src/components/Column/Column.jsx":
 /*!******************************************!*\
-  !*** ./src/components/column/column.jsx ***!
+  !*** ./src/components/Column/Column.jsx ***!
   \******************************************/
 /*! namespace exports */
 /*! export default [provided] [no usage info] [missing usage info prevents renaming] */
 /*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/*! runtime requirements: __webpack_require__, __webpack_require__.n, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -2706,14 +2718,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_dnd__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-dnd */ "./node_modules/react-dnd/dist/esm/index.js");
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var _actions_es6__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../actions.es6 */ "./src/actions.es6");
-/* harmony import */ var _constants_es6__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../constants.es6 */ "./src/constants.es6");
-/* harmony import */ var _card_card_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../card/card.jsx */ "./src/components/card/card.jsx");
-/* harmony import */ var _column_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./column.css */ "./src/components/column/column.css");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_dnd__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-dnd */ "./node_modules/react-dnd/dist/esm/index.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _actions__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ~/actions */ "./src/actions.js");
+/* harmony import */ var _components_Card_Card__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ~/components/Card/Card */ "./src/components/Card/Card.jsx");
+/* harmony import */ var _components_Column_Column_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ~/components/Column/Column.css */ "./src/components/Column/Column.css");
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ~/constants */ "./src/constants.js");
 ;
+
 
 
 
@@ -2722,66 +2737,66 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Column({
-  column_id,
-  card_ids,
+  columnId,
+  cardIds,
   cards
 }) {
-  const dispatch = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useDispatch)();
+  const dispatch = (0,react_redux__WEBPACK_IMPORTED_MODULE_2__.useDispatch)();
   const [{
     isOver
-  }, drop] = (0,react_dnd__WEBPACK_IMPORTED_MODULE_6__.useDrop)({
-    accept: _constants_es6__WEBPACK_IMPORTED_MODULE_3__.ItemTypes.CARD,
+  }, drop] = (0,react_dnd__WEBPACK_IMPORTED_MODULE_7__.useDrop)({
+    accept: _constants__WEBPACK_IMPORTED_MODULE_6__.ItemTypes.CARD,
 
     drop({
       card
     }) {
-      dispatch((0,_actions_es6__WEBPACK_IMPORTED_MODULE_2__.moveCard)(card.card_id, column_id));
+      dispatch((0,_actions__WEBPACK_IMPORTED_MODULE_3__.moveCard)(card.cardId, columnId));
     },
 
     collect: monitor => ({
       isOver: !!monitor.isOver()
     })
   });
-  var card_id, cardComponents, column_class;
-  cardComponents = [];
-
-  for (card_id of card_ids) {
-    cardComponents.push( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-      key: card_id,
-      className: "column-card"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_card_card_jsx__WEBPACK_IMPORTED_MODULE_4__.default, {
-      card: cards[card_id]
-    })));
-  }
-
-  column_class = 'column';
+  let columnClass;
+  const cardComponents = cardIds.map(cardId => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
+    key: cardId,
+    className: "column-card"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_components_Card_Card__WEBPACK_IMPORTED_MODULE_4__.default, {
+    card: cards[cardId]
+  })));
+  columnClass = 'column';
 
   if (isOver === true) {
-    column_class += ' hover';
+    columnClass += ' hover';
   }
 
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: column_class,
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
+    className: columnClass,
     ref: drop
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
     className: "column-header"
-  }, column_id), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }, columnId), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
     className: "column-body"
   }, cardComponents));
 }
 
+Column.propTypes = {
+  columnId: (prop_types__WEBPACK_IMPORTED_MODULE_0___default().string.isRequired),
+  cardIds: prop_types__WEBPACK_IMPORTED_MODULE_0___default().arrayOf((prop_types__WEBPACK_IMPORTED_MODULE_0___default().string)).isRequired,
+  cards: prop_types__WEBPACK_IMPORTED_MODULE_0___default().shape({}).isRequired
+};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Column);
 
 /***/ }),
 
-/***/ "./src/components/create_card/create_card.jsx":
-/*!****************************************************!*\
-  !*** ./src/components/create_card/create_card.jsx ***!
-  \****************************************************/
+/***/ "./src/components/CreateCard/CreateCard.jsx":
+/*!**************************************************!*\
+  !*** ./src/components/CreateCard/CreateCard.jsx ***!
+  \**************************************************/
 /*! namespace exports */
 /*! export default [provided] [no usage info] [missing usage info prevents renaming] */
 /*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/*! runtime requirements: __webpack_require__, __webpack_require__.n, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -2789,57 +2804,59 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _create_card_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./create_card.css */ "./src/components/create_card/create_card.css");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _components_CreateCard_CreateCard_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ~/components/CreateCard/CreateCard.css */ "./src/components/CreateCard/CreateCard.css");
 ;
+
 
 
 function CreateCard({
   onCreateCard
 }) {
-  const [cardTitle, setCardTitle] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('');
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  const [cardTitle, setCardTitle] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)('');
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
     className: "create_card"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("textarea", {
     placeholder: "Enter card text, one per line",
     value: cardTitle,
     onChange: e => setCardTitle(e.target.value)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("button", {
+    type: "button",
     onClick: () => {
-      var card_text, cards, card;
-
       if (cardTitle === '') {
         return;
-      }
+      } // Split on newlines, to permit a bulk entry
 
-      card_text = cardTitle; // Split on newlines, to permit a bulk entry
 
-      cards = card_text.split('\n');
-
-      for (card of cards) {
+      const cards = cardTitle.split('\n');
+      cards.forEach(card => {
         if (card.trim() !== '') {
           onCreateCard(card);
         }
-      } // Clear out the input box
-
+      }); // Clear out the input box
 
       setCardTitle('');
     }
   }, "Make it!"));
 }
 
+CreateCard.propTypes = {
+  onCreateCard: (prop_types__WEBPACK_IMPORTED_MODULE_0___default().func.isRequired)
+};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CreateCard);
 
 /***/ }),
 
-/***/ "./src/components/estimator/estimator.jsx":
+/***/ "./src/components/Estimator/Estimator.jsx":
 /*!************************************************!*\
-  !*** ./src/components/estimator/estimator.jsx ***!
+  !*** ./src/components/Estimator/Estimator.jsx ***!
   \************************************************/
 /*! namespace exports */
 /*! export default [provided] [no usage info] [missing usage info prevents renaming] */
 /*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/*! runtime requirements: __webpack_require__, __webpack_require__.n, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -2848,15 +2865,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_dnd__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-dnd */ "./node_modules/react-dnd/dist/esm/common/DndProvider.js");
-/* harmony import */ var react_dnd_html5_backend__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-dnd-html5-backend */ "./node_modules/react-dnd-html5-backend/dist/esm/index.js");
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var _actions_es6__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../actions.es6 */ "./src/actions.es6");
-/* harmony import */ var _clear_board_clear_board_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../clear_board/clear_board.jsx */ "./src/components/clear_board/clear_board.jsx");
-/* harmony import */ var _column_column_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../column/column.jsx */ "./src/components/column/column.jsx");
-/* harmony import */ var _create_card_create_card_jsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../create_card/create_card.jsx */ "./src/components/create_card/create_card.jsx");
-/* harmony import */ var _estimator_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./estimator.css */ "./src/components/estimator/estimator.css");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_dnd__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-dnd */ "./node_modules/react-dnd/dist/esm/common/DndProvider.js");
+/* harmony import */ var react_dnd_html5_backend__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-dnd-html5-backend */ "./node_modules/react-dnd-html5-backend/dist/esm/index.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _components_ClearBoard_ClearBoard__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ~/components/ClearBoard/ClearBoard */ "./src/components/ClearBoard/ClearBoard.jsx");
+/* harmony import */ var _components_Column_Column__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ~/components/Column/Column */ "./src/components/Column/Column.jsx");
+/* harmony import */ var _components_CreateCard_CreateCard__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ~/components/CreateCard/CreateCard */ "./src/components/CreateCard/CreateCard.jsx");
+/* harmony import */ var _actions__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ~/actions */ "./src/actions.js");
+/* harmony import */ var _components_Estimator_Estimator_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ~/components/Estimator/Estimator.css */ "./src/components/Estimator/Estimator.css");
 ;
+
 
 
 
@@ -2870,46 +2890,44 @@ function Estimator({
   columns,
   cards
 }) {
-  const dispatch = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useDispatch)();
-  var columnsComponents, column_id;
-  columnsComponents = [];
-
-  for (column_id of Object.keys(columns)) {
-    columnsComponents.push( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_column_column_jsx__WEBPACK_IMPORTED_MODULE_4__.default, {
-      key: column_id,
-      column_id: column_id,
-      card_ids: columns[column_id],
-      cards: cards
-    }));
-  }
-
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_dnd__WEBPACK_IMPORTED_MODULE_7__.DndProvider, {
-    backend: react_dnd_html5_backend__WEBPACK_IMPORTED_MODULE_8__.HTML5Backend
+  const dispatch = (0,react_redux__WEBPACK_IMPORTED_MODULE_2__.useDispatch)();
+  const columnsComponents = Object.keys(columns).map(columnId => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Column_Column__WEBPACK_IMPORTED_MODULE_4__.default, {
+    key: columnId,
+    columnId: columnId,
+    cardIds: columns[columnId],
+    cards: cards
+  }));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_dnd__WEBPACK_IMPORTED_MODULE_8__.DndProvider, {
+    backend: react_dnd_html5_backend__WEBPACK_IMPORTED_MODULE_9__.HTML5Backend
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "estimator"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "toolbar"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_create_card_create_card_jsx__WEBPACK_IMPORTED_MODULE_5__.default, {
-    onCreateCard: title => dispatch((0,_actions_es6__WEBPACK_IMPORTED_MODULE_2__.addCard)(title))
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_clear_board_clear_board_jsx__WEBPACK_IMPORTED_MODULE_3__.default, {
-    onClearBoard: () => dispatch((0,_actions_es6__WEBPACK_IMPORTED_MODULE_2__.clearBoard)())
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_CreateCard_CreateCard__WEBPACK_IMPORTED_MODULE_5__.default, {
+    onCreateCard: title => dispatch((0,_actions__WEBPACK_IMPORTED_MODULE_6__.addCard)(title))
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_ClearBoard_ClearBoard__WEBPACK_IMPORTED_MODULE_3__.default, {
+    onClearBoard: () => dispatch((0,_actions__WEBPACK_IMPORTED_MODULE_6__.clearBoard)())
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "estimator-columns"
   }, columnsComponents)));
 }
 
+Estimator.propTypes = {
+  columns: prop_types__WEBPACK_IMPORTED_MODULE_1___default().shape({}).isRequired,
+  cards: prop_types__WEBPACK_IMPORTED_MODULE_1___default().shape({}).isRequired
+};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Estimator);
 
 /***/ }),
 
-/***/ "./src/components/loading/loading.jsx":
+/***/ "./src/components/Loading/Loading.jsx":
 /*!********************************************!*\
-  !*** ./src/components/loading/loading.jsx ***!
+  !*** ./src/components/Loading/Loading.jsx ***!
   \********************************************/
 /*! namespace exports */
 /*! export default [provided] [no usage info] [missing usage info prevents renaming] */
 /*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/*! runtime requirements: __webpack_require__, __webpack_require__.n, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -2918,40 +2936,43 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _constants_es6__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../constants.es6 */ "./src/constants.es6");
-/* harmony import */ var _loading_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./loading.css */ "./src/components/loading/loading.css");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ~/constants */ "./src/constants.js");
+/* harmony import */ var _components_Loading_Loading_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ~/components/Loading/Loading.css */ "./src/components/Loading/Loading.css");
 ;
 
 
 
+
 function Loading({
-  app_state
+  appState
 }) {
-  var state_message;
+  let stateMessage;
 
-  switch (app_state) {
-    case _constants_es6__WEBPACK_IMPORTED_MODULE_1__.LOADING_STATES.UNINITIALIZED:
-      state_message = 'Starting up...';
+  switch (appState) {
+    case _constants__WEBPACK_IMPORTED_MODULE_2__.LOADING_STATES.UNINITIALIZED:
+      stateMessage = 'Starting up...';
       break;
 
-    case _constants_es6__WEBPACK_IMPORTED_MODULE_1__.LOADING_STATES.CONNECTING_TO_SERVER:
-      state_message = 'Connecting to Crossbar...';
+    case _constants__WEBPACK_IMPORTED_MODULE_2__.LOADING_STATES.CONNECTING_TO_SERVER:
+      stateMessage = 'Connecting to Crossbar...';
       break;
 
-    case _constants_es6__WEBPACK_IMPORTED_MODULE_1__.LOADING_STATES.GETTING_INITIAL_STATE:
-      state_message = 'Getting initial state...';
+    case _constants__WEBPACK_IMPORTED_MODULE_2__.LOADING_STATES.GETTING_INITIAL_STATE:
+      stateMessage = 'Getting initial state...';
       break;
 
-    case _constants_es6__WEBPACK_IMPORTED_MODULE_1__.LOADING_STATES.SUBSCRIBING_TO_RECEIVE_INITIAL_STATE:
-      state_message = 'Subscribing to recieve initial state...';
+    case _constants__WEBPACK_IMPORTED_MODULE_2__.LOADING_STATES.SUBSCRIBING_TO_RECEIVE_INITIAL_STATE:
+      stateMessage = 'Subscribing to recieve initial state...';
       break;
 
-    case _constants_es6__WEBPACK_IMPORTED_MODULE_1__.LOADING_STATES.UNSUBSCRIBING_TO_RECEIVE_INITIAL_STATE:
-      state_message = 'Final preparation...';
+    case _constants__WEBPACK_IMPORTED_MODULE_2__.LOADING_STATES.UNSUBSCRIBING_TO_RECEIVE_INITIAL_STATE:
+      stateMessage = 'Final preparation...';
       break;
 
     default:
-      state_message = 'An unexpected state was encountered:' + app_state;
+      stateMessage = `An unexpected state was encountered:${appState}`;
       break;
   }
 
@@ -2959,17 +2980,20 @@ function Loading({
     className: "loading"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "loading-spinner"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, state_message));
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, stateMessage));
 }
 
+Loading.propTypes = {
+  appState: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().string.isRequired)
+};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Loading);
 
 /***/ }),
 
-/***/ "./src/config.es6":
-/*!************************!*\
-  !*** ./src/config.es6 ***!
-  \************************/
+/***/ "./src/config.js":
+/*!***********************!*\
+  !*** ./src/config.js ***!
+  \***********************/
 /*! namespace exports */
 /*! export default [provided] [no usage info] [missing usage info prevents renaming] */
 /*! other exports [not provided] [no usage info] */
@@ -2989,10 +3013,10 @@ const CONFIG = {
 
 /***/ }),
 
-/***/ "./src/constants.es6":
-/*!***************************!*\
-  !*** ./src/constants.es6 ***!
-  \***************************/
+/***/ "./src/constants.js":
+/*!**************************!*\
+  !*** ./src/constants.js ***!
+  \**************************/
 /*! namespace exports */
 /*! export INITIAL_STATE_SUBSCRIPTION [provided] [no usage info] [missing usage info prevents renaming] */
 /*! export ItemTypes [provided] [no usage info] [missing usage info prevents renaming] */
@@ -3024,10 +3048,10 @@ const INITIAL_STATE_SUBSCRIPTION = 'INITIAL_STATE_SUBSCRIPTION';
 
 /***/ }),
 
-/***/ "./src/crossbar_connector.es6":
-/*!************************************!*\
-  !*** ./src/crossbar_connector.es6 ***!
-  \************************************/
+/***/ "./src/crossbar_connector.js":
+/*!***********************************!*\
+  !*** ./src/crossbar_connector.js ***!
+  \***********************************/
 /*! namespace exports */
 /*! export getSession [provided] [no usage info] [missing usage info prevents renaming] */
 /*! export getSubscription [provided] [no usage info] [missing usage info prevents renaming] */
@@ -3047,9 +3071,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "getSubscription": () => /* binding */ getSubscription,
 /* harmony export */   "unregisterSubscription": () => /* binding */ unregisterSubscription
 /* harmony export */ });
-var session, subscriptions;
-session = null;
-subscriptions = {}; // NOTE: Why is this state here instead of inside of Redux?
+let session = null;
+const subscriptions = {}; // NOTE: Why is this state here instead of inside of Redux?
 // Unfortunately, we can't really get an immutable copy of anything related to autobahn, because autobahn uses
 // mutable objects as the heart and soul of the library.  These can't be serialized or reused, so we'll have to
 // manage their state separately, even though it's kind of messy.
@@ -3073,9 +3096,9 @@ function unregisterSubscription(name) {
 
 /***/ }),
 
-/***/ "./src/main/app.jsx":
+/***/ "./src/main/App.jsx":
 /*!**************************!*\
-  !*** ./src/main/app.jsx ***!
+  !*** ./src/main/App.jsx ***!
   \**************************/
 /*! namespace exports */
 /*! export default [provided] [no usage info] [missing usage info prevents renaming] */
@@ -3090,10 +3113,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var _components_app_error_app_error_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/app_error/app_error.jsx */ "./src/components/app_error/app_error.jsx");
-/* harmony import */ var _components_estimator_estimator_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/estimator/estimator.jsx */ "./src/components/estimator/estimator.jsx");
-/* harmony import */ var _components_loading_loading_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/loading/loading.jsx */ "./src/components/loading/loading.jsx");
-/* harmony import */ var _constants_es6__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../constants.es6 */ "./src/constants.es6");
+/* harmony import */ var _components_Estimator_Estimator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ~/components/Estimator/Estimator */ "./src/components/Estimator/Estimator.jsx");
+/* harmony import */ var _components_Loading_Loading__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ~/components/Loading/Loading */ "./src/components/Loading/Loading.jsx");
+/* harmony import */ var _components_AppError_AppError__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ~/components/AppError/AppError */ "./src/components/AppError/AppError.jsx");
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ~/constants */ "./src/constants.js");
 ;
 
 
@@ -3102,36 +3125,38 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function App() {
-  const app_state = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useSelector)(state => state.cards.app_state);
+  const appState = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useSelector)(state => state.cards.appState);
   const cards = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useSelector)(state => state.cards.cards);
   const columns = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useSelector)(state => state.cards.columns);
-  const app_error_description = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useSelector)(state => state.cards.app_error_description);
+  const appErrorDescription = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useSelector)(state => state.cards.appErrorDescription);
   const dispatch = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useDispatch)();
 
-  if (app_state === _constants_es6__WEBPACK_IMPORTED_MODULE_5__.LOADING_STATES.READY) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_estimator_estimator_jsx__WEBPACK_IMPORTED_MODULE_3__.default, {
+  if (appState === _constants__WEBPACK_IMPORTED_MODULE_5__.LOADING_STATES.READY) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Estimator_Estimator__WEBPACK_IMPORTED_MODULE_2__.default, {
       cards: cards,
       columns: columns,
       dispatch: dispatch
     });
-  } else if (app_state === _constants_es6__WEBPACK_IMPORTED_MODULE_5__.LOADING_STATES.ERROR) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_app_error_app_error_jsx__WEBPACK_IMPORTED_MODULE_2__.default, {
-      message: app_error_description
-    });
-  } else {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_loading_loading_jsx__WEBPACK_IMPORTED_MODULE_4__.default, {
-      app_state: app_state
+  }
+
+  if (appState === _constants__WEBPACK_IMPORTED_MODULE_5__.LOADING_STATES.ERROR) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_AppError_AppError__WEBPACK_IMPORTED_MODULE_4__.default, {
+      message: appErrorDescription
     });
   }
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Loading_Loading__WEBPACK_IMPORTED_MODULE_3__.default, {
+    appState: appState
+  });
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);
 
 /***/ }),
 
-/***/ "./src/main/main.jsx":
+/***/ "./src/main/Main.jsx":
 /*!***************************!*\
-  !*** ./src/main/main.jsx ***!
+  !*** ./src/main/Main.jsx ***!
   \***************************/
 /*! namespace exports */
 /*! exports [not provided] [no usage info] */
@@ -3143,11 +3168,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var _actions_es6__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../actions.es6 */ "./src/actions.es6");
-/* harmony import */ var _config_es6__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../config.es6 */ "./src/config.es6");
-/* harmony import */ var _redux_store_es6__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../redux_store.es6 */ "./src/redux_store.es6");
-/* harmony import */ var _app_jsx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app.jsx */ "./src/main/app.jsx");
-/* harmony import */ var _main_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./main.css */ "./src/main/main.css");
+/* harmony import */ var _actions__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ~/actions */ "./src/actions.js");
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ~/config */ "./src/config.js");
+/* harmony import */ var _redux_store__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ~/redux_store */ "./src/redux_store.js");
+/* harmony import */ var _main_App__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ~/main/App */ "./src/main/App.jsx");
+/* harmony import */ var _main_Main_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ~/main/Main.css */ "./src/main/Main.css");
 ;
 
 
@@ -3157,33 +3182,33 @@ __webpack_require__.r(__webpack_exports__);
 
 
 react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_redux__WEBPACK_IMPORTED_MODULE_2__.Provider, {
-  store: _redux_store_es6__WEBPACK_IMPORTED_MODULE_5__.default
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_app_jsx__WEBPACK_IMPORTED_MODULE_6__.default, null)), document.getElementById('app')); // Kick off the server connection process
+  store: _redux_store__WEBPACK_IMPORTED_MODULE_5__.default
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_main_App__WEBPACK_IMPORTED_MODULE_6__.default, null)), document.getElementById('app')); // Kick off the server connection process
 
-_redux_store_es6__WEBPACK_IMPORTED_MODULE_5__.default.dispatch((0,_actions_es6__WEBPACK_IMPORTED_MODULE_3__.connectToServer)(_config_es6__WEBPACK_IMPORTED_MODULE_4__.default.crossbar_uri, _config_es6__WEBPACK_IMPORTED_MODULE_4__.default.realm)); // TODO: routing, to get unique boards, and to create a board
-//// 404 route
-//var NoMatch = React.createClass({
+_redux_store__WEBPACK_IMPORTED_MODULE_5__.default.dispatch((0,_actions__WEBPACK_IMPORTED_MODULE_3__.connectToServer)(_config__WEBPACK_IMPORTED_MODULE_4__.default.crossbar_uri, _config__WEBPACK_IMPORTED_MODULE_4__.default.realm)); // TODO: routing, to get unique boards, and to create a board
+/// / 404 route
+// let NoMatch = React.createClass({
 //    render() {
 //        return (
 //            <h1>"Sorry!"</h1>
 //        );
 //    }
-//});
+// });
 //
-//// Routing
-//ReactDOM.render((
+/// / Routing
+// ReactDOM.render((
 //    <Router>
 //        <Route path="/" component={Estimator}/>
 //        <Route path="*" component={NoMatch}/>
 //    </Router>
-//), document.getElementById('app'));
+// ), document.getElementById('app'));
 
 /***/ }),
 
-/***/ "./src/redux_store.es6":
-/*!*****************************!*\
-  !*** ./src/redux_store.es6 ***!
-  \*****************************/
+/***/ "./src/redux_store.js":
+/*!****************************!*\
+  !*** ./src/redux_store.js ***!
+  \****************************/
 /*! namespace exports */
 /*! export default [provided] [no usage info] [missing usage info prevents renaming] */
 /*! other exports [not provided] [no usage info] */
@@ -3199,8 +3224,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var redux_logger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux-logger */ "./node_modules/redux-logger/dist/redux-logger.js");
 /* harmony import */ var redux_logger__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(redux_logger__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var redux_thunk__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! redux-thunk */ "./node_modules/redux-thunk/es/index.js");
-/* harmony import */ var _actions_es6__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./actions.es6 */ "./src/actions.es6");
-/* harmony import */ var _constants_es6__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./constants.es6 */ "./src/constants.es6");
+/* harmony import */ var _actions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ~/actions */ "./src/actions.js");
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ~/constants */ "./src/constants.js");
 ;
 
 
@@ -3208,10 +3233,10 @@ __webpack_require__.r(__webpack_exports__);
  // TODO: split out 'cards' state tree reducers from 'app status' state tree reducers
 
 const initialState = {
-  app_state: _constants_es6__WEBPACK_IMPORTED_MODULE_3__.LOADING_STATES.UNINITIALIZED,
-  app_error_description: '',
-  receive_initial_state_subscription: null,
-  initial_state_timer: null,
+  appState: _constants__WEBPACK_IMPORTED_MODULE_3__.LOADING_STATES.UNINITIALIZED,
+  appErrorDescription: '',
+  receiveInitialStateSubscription: null,
+  initialStateTimer: null,
   columns: {
     1: [],
     2: [],
@@ -3224,70 +3249,78 @@ const initialState = {
   cards: {}
 };
 
-function copyState(old_state) {
-  var new_state; // TODO: use the 'Immutable' library instead
-
-  new_state = JSON.parse(JSON.stringify(old_state));
-  return new_state;
+function copyState(oldState) {
+  // TODO: use the 'Immutable' library instead
+  const newState = JSON.parse(JSON.stringify(oldState));
+  return newState;
 }
 
 function reduceAddCardReceived(state, payload) {
-  var new_state, card; // Deep copy the old state
+  // Deep copy the old state
+  const newState = copyState(state); // Modify the state
 
-  new_state = copyState(state); // Modify the state
+  const {
+    card
+  } = payload; // Create the new Card
 
-  card = payload.card; // Create the new card
-
-  new_state.cards[card.card_id] = {
-    card_id: card.card_id,
+  newState.cards[card.cardId] = {
+    cardId: card.cardId,
     title: card.title,
     history: card.history
-  }; // Add the card to the ? column
+  }; // Add the Card to the ? Column
 
-  new_state.columns['?'].push(card.card_id); // Return the new state
+  newState.columns['?'].push(card.cardId); // Return the new state
 
-  return new_state;
+  return newState;
+}
+
+function removeFromAllColumns(columns, cardId) {
+  let index;
+  Object.keys(columns).forEach(columnId => {
+    index = columns[columnId].indexOf(cardId);
+
+    if (index !== -1) {
+      columns[columnId].splice(index, 1);
+    }
+  });
 }
 
 function reduceMoveCardReceived(state, payload) {
-  // Don't move to the same column you're already in
-  if (state.columns[payload.to_column].find(a => a === payload.card_id) !== undefined) {
+  // Don't move to the same Column you're already in
+  if (state.columns[payload.toColumn].find(a => a === payload.cardId) !== undefined) {
     return state;
-  }
+  } // Copy the old state
 
-  var new_state; // Copy the old state
 
-  new_state = copyState(state); // Remove the card_id from all columns
+  const newState = copyState(state); // Remove the cardId from all columns
 
-  removeFromAllColumns(new_state.columns, payload.card_id); // Add the card_id to the new column
+  removeFromAllColumns(newState.columns, payload.cardId); // Add the cardId to the new Column
 
-  new_state.columns[payload.to_column].push(payload.card_id); // Update its move history
+  newState.columns[payload.toColumn].push(payload.cardId); // Update its move history
 
-  new_state.cards[payload.card_id].history.push(payload.to_column); // Return the new state
+  newState.cards[payload.cardId].history.push(payload.toColumn); // Return the new state
 
-  return new_state;
+  return newState;
 }
 
 function reduceDeleteCardReceived(state, payload) {
-  var new_state; // Copy the old state
+  // Copy the old state
+  const newState = copyState(state); // Remove the cardId from all columns
 
-  new_state = copyState(state); // Remove the card_id from all columns
+  removeFromAllColumns(newState.columns, payload.cardId); // Remove the Card from cards
 
-  removeFromAllColumns(new_state.columns, payload.card_id); // Remove the card from cards
+  delete newState.cards[payload.cardId]; // Return the new state
 
-  delete new_state.cards[payload.card_id]; // Return the new state
-
-  return new_state;
+  return newState;
 }
 
-function reduceClearBoardReceived(state, payload) {
-  var new_state; // Copy the old state
-
-  new_state = copyState(state); // Modify the state
+function reduceClearBoardReceived(state) {
+  // Copy the old state
+  const newState = copyState(state); // Modify the state
   // TODO: it'd be nice if we could just copy this portion out of the initial state.  Probably trivial once
   // TODO: the server events and board state are separated.
 
-  new_state.columns = {
+  newState.columns = {
     1: [],
     2: [],
     3: [],
@@ -3296,229 +3329,204 @@ function reduceClearBoardReceived(state, payload) {
     13: [],
     '?': []
   };
-  new_state.cards = {}; // Return the new state
+  newState.cards = {}; // Return the new state
 
-  return new_state;
-}
-
-function removeFromAllColumns(columns, card_id) {
-  var column_id, index;
-
-  for (column_id of Object.keys(columns)) {
-    index = columns[column_id].indexOf(card_id);
-
-    if (index !== -1) {
-      columns[column_id].splice(index, 1);
-    }
-  }
+  return newState;
 }
 
 function reduceConnectionClosed(state, payload) {
-  var new_state; // Copy the old state
+  // Copy the old state
+  const newState = copyState(state); // Update the state
 
-  new_state = copyState(state); // Update the state
+  newState.appState = _constants__WEBPACK_IMPORTED_MODULE_3__.LOADING_STATES.ERROR;
+  newState.appErrorDescription = `Sorry, but the connection was closed.  This was the reason given:${payload.reason}`; // Return the new state
 
-  new_state.app_state = _constants_es6__WEBPACK_IMPORTED_MODULE_3__.LOADING_STATES.ERROR;
-  new_state.app_error_description = 'Sorry, but the connection was closed.  This was the reason given:' + payload.reason; // Return the new state
-
-  return new_state;
+  return newState;
 }
 
 function reduceSubscribeToInitialStateFailed(state, payload) {
-  var new_state; // Copy the old state
+  // Copy the old state
+  const newState = copyState(state); // Update the state
 
-  new_state = copyState(state); // Update the state
+  newState.appState = _constants__WEBPACK_IMPORTED_MODULE_3__.LOADING_STATES.ERROR;
+  newState.appErrorDescription = `Sorry, but we were unable to subscribe to the initial board state.  This was the reason given:${payload.reason}`; // Return the new state
 
-  new_state.app_state = _constants_es6__WEBPACK_IMPORTED_MODULE_3__.LOADING_STATES.ERROR;
-  new_state.app_error_description = 'Sorry, but we were unable to subscribe to the initial board state.  This was the reason given:' + payload.reason; // Return the new state
-
-  return new_state;
+  return newState;
 }
 
 function reduceUnsubscribeFromInitialStateFailed(state, payload) {
-  var new_state; // Copy the old state
+  // Copy the old state
+  const newState = copyState(state); // Update the state
 
-  new_state = copyState(state); // Update the state
+  newState.appState = _constants__WEBPACK_IMPORTED_MODULE_3__.LOADING_STATES.ERROR;
+  newState.appErrorDescription = `Sorry, but we were unable to unsubscribe from receiving the initial board state.  This was the reason given:${payload.reason}`; // Return the new state
 
-  new_state.app_state = _constants_es6__WEBPACK_IMPORTED_MODULE_3__.LOADING_STATES.ERROR;
-  new_state.app_error_description = 'Sorry, but we were unable to unsubscribe from receiving the initial board state.  This was the reason given:' + payload.reason; // Return the new state
-
-  return new_state;
+  return newState;
 }
 
 function reduceSubscribeToAddCardFailed(state, payload) {
-  var new_state; // Copy the old state
+  // Copy the old state
+  const newState = copyState(state); // Update the state
 
-  new_state = copyState(state); // Update the state
+  newState.appState = _constants__WEBPACK_IMPORTED_MODULE_3__.LOADING_STATES.ERROR;
+  newState.appErrorDescription = `Sorry, but we were unable to subscribe to receiving added cards.  This was the reason given:${payload.reason}`; // Return the new state
 
-  new_state.app_state = _constants_es6__WEBPACK_IMPORTED_MODULE_3__.LOADING_STATES.ERROR;
-  new_state.app_error_description = 'Sorry, but we were unable to subscribe to receiving added cards.  This was the reason given:' + payload.reason; // Return the new state
-
-  return new_state;
+  return newState;
 }
 
 function reduceSubscribeToMoveCardFailed(state, payload) {
-  var new_state; // Copy the old state
+  // Copy the old state
+  const newState = copyState(state); // Update the state
 
-  new_state = copyState(state); // Update the state
+  newState.appState = _constants__WEBPACK_IMPORTED_MODULE_3__.LOADING_STATES.ERROR;
+  newState.appErrorDescription = `Sorry, but we were unable to subscribe to receiving moved cards.  This was the reason given:${payload.reason}`; // Return the new state
 
-  new_state.app_state = _constants_es6__WEBPACK_IMPORTED_MODULE_3__.LOADING_STATES.ERROR;
-  new_state.app_error_description = 'Sorry, but we were unable to subscribe to receiving moved cards.  This was the reason given:' + payload.reason; // Return the new state
-
-  return new_state;
+  return newState;
 }
 
 function reduceSubscribeToDeleteCardFailed(state, payload) {
-  var new_state; // Copy the old state
+  // Copy the old state
+  const newState = copyState(state); // Update the state
 
-  new_state = copyState(state); // Update the state
+  newState.appState = _constants__WEBPACK_IMPORTED_MODULE_3__.LOADING_STATES.ERROR;
+  newState.appErrorDescription = `Sorry, but we were unable to subscribe to receiving deleted cards.  This was the reason given:${payload.reason}`; // Return the new state
 
-  new_state.app_state = _constants_es6__WEBPACK_IMPORTED_MODULE_3__.LOADING_STATES.ERROR;
-  new_state.app_error_description = 'Sorry, but we were unable to subscribe to receiving deleted cards.  This was the reason given:' + payload.reason; // Return the new state
-
-  return new_state;
+  return newState;
 }
 
 function reduceSubscribeToClearBoardFailed(state, payload) {
-  var new_state; // Copy the old state
+  // Copy the old state
+  const newState = copyState(state); // Update the state
 
-  new_state = copyState(state); // Update the state
+  newState.appState = _constants__WEBPACK_IMPORTED_MODULE_3__.LOADING_STATES.ERROR;
+  newState.appErrorDescription = `Sorry, but we were unable to subscribe to receiving clear board events.  This was the reason given:${payload.reason}`; // Return the new state
 
-  new_state.app_state = _constants_es6__WEBPACK_IMPORTED_MODULE_3__.LOADING_STATES.ERROR;
-  new_state.app_error_description = 'Sorry, but we were unable to subscribe to receiving clear board events.  This was the reason given:' + payload.reason; // Return the new state
-
-  return new_state;
+  return newState;
 }
 
-function reduceConnectingToServer(state, payload) {
-  var new_state; // Copy the old state
+function reduceConnectingToServer(state) {
+  // Copy the old state
+  const newState = copyState(state); // Update the state
 
-  new_state = copyState(state); // Update the state
+  newState.appState = _constants__WEBPACK_IMPORTED_MODULE_3__.LOADING_STATES.CONNECTING_TO_SERVER; // Return the new state
 
-  new_state.app_state = _constants_es6__WEBPACK_IMPORTED_MODULE_3__.LOADING_STATES.CONNECTING_TO_SERVER; // Return the new state
-
-  return new_state;
+  return newState;
 }
 
-function reduceSubscribingToInitialState(state, payload) {
-  var new_state; // Copy the old state
+function reduceSubscribingToInitialState(state) {
+  // Copy the old state
+  const newState = copyState(state); // Update the state
 
-  new_state = copyState(state); // Update the state
+  newState.appState = _constants__WEBPACK_IMPORTED_MODULE_3__.LOADING_STATES.SUBSCRIBING_TO_RECEIVE_INITIAL_STATE; // Return the new state
 
-  new_state.app_state = _constants_es6__WEBPACK_IMPORTED_MODULE_3__.LOADING_STATES.SUBSCRIBING_TO_RECEIVE_INITIAL_STATE; // Return the new state
-
-  return new_state;
+  return newState;
 }
 
-function reduceGettingInitialState(state, payload) {
-  var new_state; // Copy the old state
+function reduceGettingInitialState(state) {
+  // Copy the old state
+  const newState = copyState(state); // Update the state
 
-  new_state = copyState(state); // Update the state
+  newState.appState = _constants__WEBPACK_IMPORTED_MODULE_3__.LOADING_STATES.GETTING_INITIAL_STATE; // Return the new state
 
-  new_state.app_state = _constants_es6__WEBPACK_IMPORTED_MODULE_3__.LOADING_STATES.GETTING_INITIAL_STATE; // Return the new state
-
-  return new_state;
+  return newState;
 }
 
 function reduceSetInitialStateTimer(state, payload) {
-  var new_state; // Copy the old state
+  // Copy the old state
+  const newState = copyState(state); // Update the state
 
-  new_state = copyState(state); // Update the state
+  newState.initialStateTimer = payload.timer; // Return the new state
 
-  new_state.initial_state_timer = payload.timer; // Return the new state
-
-  return new_state;
+  return newState;
 }
 
 function reduceSetInitialState(state, payload) {
-  var new_state; // Copy the old state
+  // Copy the old state
+  const newState = copyState(state); // Update the state
 
-  new_state = copyState(state); // Update the state
+  newState.cards = payload.cards;
+  newState.columns = payload.columns; // Return the new state
 
-  new_state.cards = payload.cards;
-  new_state.columns = payload.columns; // Return the new state
-
-  return new_state;
+  return newState;
 }
 
-function reduceUnsubscribingFromInitialState(state, payload) {
-  var new_state; // Copy the old state
+function reduceUnsubscribingFromInitialState(state) {
+  // Copy the old state
+  const newState = copyState(state); // Update the state
 
-  new_state = copyState(state); // Update the state
+  newState.appState = _constants__WEBPACK_IMPORTED_MODULE_3__.LOADING_STATES.UNSUBSCRIBING_TO_RECEIVE_INITIAL_STATE; // Return the new state
 
-  new_state.app_state = _constants_es6__WEBPACK_IMPORTED_MODULE_3__.LOADING_STATES.UNSUBSCRIBING_TO_RECEIVE_INITIAL_STATE; // Return the new state
-
-  return new_state;
+  return newState;
 }
 
-function reduceInitializationComplete(state, payload) {
-  var new_state; // Copy the old state
+function reduceInitializationComplete(state) {
+  // Copy the old state
+  const newState = copyState(state); // Update the state
 
-  new_state = copyState(state); // Update the state
+  newState.appState = _constants__WEBPACK_IMPORTED_MODULE_3__.LOADING_STATES.READY; // Return the new state
 
-  new_state.app_state = _constants_es6__WEBPACK_IMPORTED_MODULE_3__.LOADING_STATES.READY; // Return the new state
-
-  return new_state;
+  return newState;
 }
 
 function cards(state = initialState, action) {
   switch (action.type) {
-    case _actions_es6__WEBPACK_IMPORTED_MODULE_2__.ADD_CARD_RECEIVED:
+    case _actions__WEBPACK_IMPORTED_MODULE_2__.ADD_CARD_RECEIVED:
       return reduceAddCardReceived(state, action.payload);
 
-    case _actions_es6__WEBPACK_IMPORTED_MODULE_2__.MOVE_CARD_RECEIVED:
+    case _actions__WEBPACK_IMPORTED_MODULE_2__.MOVE_CARD_RECEIVED:
       return reduceMoveCardReceived(state, action.payload);
 
-    case _actions_es6__WEBPACK_IMPORTED_MODULE_2__.DELETE_CARD_RECEIVED:
+    case _actions__WEBPACK_IMPORTED_MODULE_2__.DELETE_CARD_RECEIVED:
       return reduceDeleteCardReceived(state, action.payload);
 
-    case _actions_es6__WEBPACK_IMPORTED_MODULE_2__.CLEAR_BOARD_RECEIVED:
+    case _actions__WEBPACK_IMPORTED_MODULE_2__.CLEAR_BOARD_RECEIVED:
       return reduceClearBoardReceived(state, action.payload);
 
-    case _actions_es6__WEBPACK_IMPORTED_MODULE_2__.CONNECTING_TO_SERVER:
+    case _actions__WEBPACK_IMPORTED_MODULE_2__.CONNECTING_TO_SERVER:
       return reduceConnectingToServer(state, action.payload);
 
-    case _actions_es6__WEBPACK_IMPORTED_MODULE_2__.CONNECTION_CLOSED:
+    case _actions__WEBPACK_IMPORTED_MODULE_2__.CONNECTION_CLOSED:
       return reduceConnectionClosed(state, action.payload);
 
-    case _actions_es6__WEBPACK_IMPORTED_MODULE_2__.SUBSCRIBING_TO_INITIAL_STATE:
+    case _actions__WEBPACK_IMPORTED_MODULE_2__.SUBSCRIBING_TO_INITIAL_STATE:
       return reduceSubscribingToInitialState(state, action.payload);
 
-    case _actions_es6__WEBPACK_IMPORTED_MODULE_2__.SUBSCRIBE_TO_INITIAL_STATE_FAILED:
+    case _actions__WEBPACK_IMPORTED_MODULE_2__.SUBSCRIBE_TO_INITIAL_STATE_FAILED:
       return reduceSubscribeToInitialStateFailed(state, action.payload);
 
-    case _actions_es6__WEBPACK_IMPORTED_MODULE_2__.GETTING_INITIAL_STATE:
+    case _actions__WEBPACK_IMPORTED_MODULE_2__.GETTING_INITIAL_STATE:
       return reduceGettingInitialState(state, action.payload);
 
-    case _actions_es6__WEBPACK_IMPORTED_MODULE_2__.SET_INITIAL_STATE_TIMER:
+    case _actions__WEBPACK_IMPORTED_MODULE_2__.SET_INITIAL_STATE_TIMER:
       return reduceSetInitialStateTimer(state, action.payload);
 
-    case _actions_es6__WEBPACK_IMPORTED_MODULE_2__.SET_INITIAL_STATE:
+    case _actions__WEBPACK_IMPORTED_MODULE_2__.SET_INITIAL_STATE:
       return reduceSetInitialState(state, action.payload);
 
-    case _actions_es6__WEBPACK_IMPORTED_MODULE_2__.UNSUBSCRIBING_FROM_INITIAL_STATE:
+    case _actions__WEBPACK_IMPORTED_MODULE_2__.UNSUBSCRIBING_FROM_INITIAL_STATE:
       return reduceUnsubscribingFromInitialState(state, action.payload);
 
-    case _actions_es6__WEBPACK_IMPORTED_MODULE_2__.UNSUBSCRIBE_FROM_INITIAL_STATE_FAILED:
+    case _actions__WEBPACK_IMPORTED_MODULE_2__.UNSUBSCRIBE_FROM_INITIAL_STATE_FAILED:
       return reduceUnsubscribeFromInitialStateFailed(state, action.payload);
 
-    case _actions_es6__WEBPACK_IMPORTED_MODULE_2__.SUBSCRIBE_TO_ADD_CARD_FAILED:
+    case _actions__WEBPACK_IMPORTED_MODULE_2__.SUBSCRIBE_TO_ADD_CARD_FAILED:
       return reduceSubscribeToAddCardFailed(state, action.payload);
 
-    case _actions_es6__WEBPACK_IMPORTED_MODULE_2__.SUBSCRIBE_TO_MOVE_CARD_FAILED:
+    case _actions__WEBPACK_IMPORTED_MODULE_2__.SUBSCRIBE_TO_MOVE_CARD_FAILED:
       return reduceSubscribeToMoveCardFailed(state, action.payload);
 
-    case _actions_es6__WEBPACK_IMPORTED_MODULE_2__.SUBSCRIBE_TO_DELETE_CARD_FAILED:
+    case _actions__WEBPACK_IMPORTED_MODULE_2__.SUBSCRIBE_TO_DELETE_CARD_FAILED:
       return reduceSubscribeToDeleteCardFailed(state, action.payload);
 
-    case _actions_es6__WEBPACK_IMPORTED_MODULE_2__.SUBSCRIBE_TO_CLEAR_BOARD_FAILED:
+    case _actions__WEBPACK_IMPORTED_MODULE_2__.SUBSCRIBE_TO_CLEAR_BOARD_FAILED:
       return reduceSubscribeToClearBoardFailed(state, action.payload);
 
-    case _actions_es6__WEBPACK_IMPORTED_MODULE_2__.INITIALIZATION_COMPLETE:
+    case _actions__WEBPACK_IMPORTED_MODULE_2__.INITIALIZATION_COMPLETE:
       return reduceInitializationComplete(state, action.payload);
-  }
 
-  return state;
+    default:
+      return state;
+  }
 } // Set up the actual store
 
 
@@ -3533,10 +3541,10 @@ const estimatorApp = (0,redux__WEBPACK_IMPORTED_MODULE_4__.combineReducers)({
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/app_error/app_error.css":
-/*!********************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/app_error/app_error.css ***!
-  \********************************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/AppError/AppError.css":
+/*!******************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/AppError/AppError.css ***!
+  \******************************************************************************************************************************/
 /*! namespace exports */
 /*! export default [provided] [no usage info] [missing usage info prevents renaming] */
 /*! other exports [not provided] [no usage info] */
@@ -3557,16 +3565,16 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".app_error {\n    font-size: 5em;\n    font-weight: bolder;\n}", "",{"version":3,"sources":["webpack://./src/components/app_error/app_error.css"],"names":[],"mappings":"AAAA;IACI,cAAc;IACd,mBAAmB;AACvB","sourcesContent":[".app_error {\n    font-size: 5em;\n    font-weight: bolder;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".app_error {\n    font-size: 5em;\n    font-weight: bolder;\n}", "",{"version":3,"sources":["webpack://./src/components/AppError/AppError.css"],"names":[],"mappings":"AAAA;IACI,cAAc;IACd,mBAAmB;AACvB","sourcesContent":[".app_error {\n    font-size: 5em;\n    font-weight: bolder;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/card/card.css":
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/Card/Card.css":
 /*!**********************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/card/card.css ***!
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/Card/Card.css ***!
   \**********************************************************************************************************************/
 /*! namespace exports */
 /*! export default [provided] [no usage info] [missing usage info prevents renaming] */
@@ -3588,17 +3596,17 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".card {\n    border: 1px solid black;\n    padding: 0.5em;\n    border-radius: 0.5em;\n    display: flex;\n    flex-direction: column;\n\n    animation-name: pulse;\n    animation-duration: 0.4s;\n    animation-iteration-count: 1;\n    animation-timing-function: ease-in-out;\n}\n\n@keyframes pulse {\n    0% {\n        background-color: orange;\n    }\n    100% {\n        background-color: rgba(255, 255, 255, 0);\n    }\n}\n\n.card-title {\n    flex: 1;\n    overflow: auto;\n}\n\n.card-move-count {\n    background-color: lightgray;\n    padding: 0.25em;\n    flex-shrink: 0;\n}\n\n.card-history {\n    flex-shrink: 0;\n}\n\n.card-history.hidden {\n    display: none;\n}\n\n.card-delete-button {\n    text-align: right;\n    display: inline;\n    position: relative;\n    height: 0;\n    top: 0.2em;\n    left: -0.2em;\n    flex-shrink: 0;\n}\n\n.card.dragging {\n    opacity: 0.5;\n    background-color: lightblue;\n}\n\n.card.warning {\n    background-color: pink;\n    animation-name: pulse-warning;\n}\n\n@keyframes pulse-warning {\n    0% {\n        background-color: orange;\n    }\n    100% {\n        background-color: pink;\n    }\n}\n\n.card.confirm_delete {\n    background-color: deeppink;\n    text-align: center;\n    display: flex;\n    flex-direction: column;\n    justify-content: space-around;\n}\n\n.card .card-confirm-title {\n    font-size: 1.5em;\n    font-weight: bold;\n}\n\n.card .card-delete-button, .card .card-move-count {\n    flex-grow: 0;\n}", "",{"version":3,"sources":["webpack://./src/components/card/card.css"],"names":[],"mappings":"AAAA;IACI,uBAAuB;IACvB,cAAc;IACd,oBAAoB;IACpB,aAAa;IACb,sBAAsB;;IAEtB,qBAAqB;IACrB,wBAAwB;IACxB,4BAA4B;IAC5B,sCAAsC;AAC1C;;AAEA;IACI;QACI,wBAAwB;IAC5B;IACA;QACI,wCAAwC;IAC5C;AACJ;;AAEA;IACI,OAAO;IACP,cAAc;AAClB;;AAEA;IACI,2BAA2B;IAC3B,eAAe;IACf,cAAc;AAClB;;AAEA;IACI,cAAc;AAClB;;AAEA;IACI,aAAa;AACjB;;AAEA;IACI,iBAAiB;IACjB,eAAe;IACf,kBAAkB;IAClB,SAAS;IACT,UAAU;IACV,YAAY;IACZ,cAAc;AAClB;;AAEA;IACI,YAAY;IACZ,2BAA2B;AAC/B;;AAEA;IACI,sBAAsB;IACtB,6BAA6B;AACjC;;AAEA;IACI;QACI,wBAAwB;IAC5B;IACA;QACI,sBAAsB;IAC1B;AACJ;;AAEA;IACI,0BAA0B;IAC1B,kBAAkB;IAClB,aAAa;IACb,sBAAsB;IACtB,6BAA6B;AACjC;;AAEA;IACI,gBAAgB;IAChB,iBAAiB;AACrB;;AAEA;IACI,YAAY;AAChB","sourcesContent":[".card {\n    border: 1px solid black;\n    padding: 0.5em;\n    border-radius: 0.5em;\n    display: flex;\n    flex-direction: column;\n\n    animation-name: pulse;\n    animation-duration: 0.4s;\n    animation-iteration-count: 1;\n    animation-timing-function: ease-in-out;\n}\n\n@keyframes pulse {\n    0% {\n        background-color: orange;\n    }\n    100% {\n        background-color: rgba(255, 255, 255, 0);\n    }\n}\n\n.card-title {\n    flex: 1;\n    overflow: auto;\n}\n\n.card-move-count {\n    background-color: lightgray;\n    padding: 0.25em;\n    flex-shrink: 0;\n}\n\n.card-history {\n    flex-shrink: 0;\n}\n\n.card-history.hidden {\n    display: none;\n}\n\n.card-delete-button {\n    text-align: right;\n    display: inline;\n    position: relative;\n    height: 0;\n    top: 0.2em;\n    left: -0.2em;\n    flex-shrink: 0;\n}\n\n.card.dragging {\n    opacity: 0.5;\n    background-color: lightblue;\n}\n\n.card.warning {\n    background-color: pink;\n    animation-name: pulse-warning;\n}\n\n@keyframes pulse-warning {\n    0% {\n        background-color: orange;\n    }\n    100% {\n        background-color: pink;\n    }\n}\n\n.card.confirm_delete {\n    background-color: deeppink;\n    text-align: center;\n    display: flex;\n    flex-direction: column;\n    justify-content: space-around;\n}\n\n.card .card-confirm-title {\n    font-size: 1.5em;\n    font-weight: bold;\n}\n\n.card .card-delete-button, .card .card-move-count {\n    flex-grow: 0;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".card {\n    border: 1px solid black;\n    padding: 0.5em;\n    border-radius: 0.5em;\n    display: grid;\n    grid-template:\n        \"title title\" auto\n        \"count delete\" 1.25rem;\n    grid-auto-flow: row;\n    animation-name: pulse;\n    animation-duration: 0.4s;\n    animation-iteration-count: 1;\n    animation-timing-function: ease-in-out;\n}\n\n@keyframes pulse {\n    0% {\n        background-color: orange;\n    }\n    100% {\n        background-color: rgba(255, 255, 255, 0);\n    }\n}\n\n.card-title {\n    overflow: auto;\n    grid-area: title;\n}\n\n.card-move-count {\n    background-color: lightgray;\n    grid-area: count;\n}\n\n.card-delete-button {\n    grid-area: delete;\n}\n\n.card-history {\n    grid-column: span 2;\n    padding: 0.25rem 0.25rem 0;\n}\n\n.card-history.hidden {\n    display: none;\n}\n\n.card.dragging {\n    opacity: 0.5;\n    background-color: lightblue;\n}\n\n.card.warning {\n    background-color: pink;\n    animation-name: pulse-warning;\n}\n\n@keyframes pulse-warning {\n    0% {\n        background-color: orange;\n    }\n    100% {\n        background-color: pink;\n    }\n}\n\n.card.confirm_delete {\n    background-color: deeppink;\n    text-align: center;\n    display: flex;\n    flex-direction: column;\n    justify-content: space-around;\n}\n\n.card .card-confirm-title {\n    font-size: 1.5em;\n    font-weight: bold;\n}\n", "",{"version":3,"sources":["webpack://./src/components/Card/Card.css"],"names":[],"mappings":"AAAA;IACI,uBAAuB;IACvB,cAAc;IACd,oBAAoB;IACpB,aAAa;IACb;;8BAE0B;IAC1B,mBAAmB;IACnB,qBAAqB;IACrB,wBAAwB;IACxB,4BAA4B;IAC5B,sCAAsC;AAC1C;;AAEA;IACI;QACI,wBAAwB;IAC5B;IACA;QACI,wCAAwC;IAC5C;AACJ;;AAEA;IACI,cAAc;IACd,gBAAgB;AACpB;;AAEA;IACI,2BAA2B;IAC3B,gBAAgB;AACpB;;AAEA;IACI,iBAAiB;AACrB;;AAEA;IACI,mBAAmB;IACnB,0BAA0B;AAC9B;;AAEA;IACI,aAAa;AACjB;;AAEA;IACI,YAAY;IACZ,2BAA2B;AAC/B;;AAEA;IACI,sBAAsB;IACtB,6BAA6B;AACjC;;AAEA;IACI;QACI,wBAAwB;IAC5B;IACA;QACI,sBAAsB;IAC1B;AACJ;;AAEA;IACI,0BAA0B;IAC1B,kBAAkB;IAClB,aAAa;IACb,sBAAsB;IACtB,6BAA6B;AACjC;;AAEA;IACI,gBAAgB;IAChB,iBAAiB;AACrB","sourcesContent":[".card {\n    border: 1px solid black;\n    padding: 0.5em;\n    border-radius: 0.5em;\n    display: grid;\n    grid-template:\n        \"title title\" auto\n        \"count delete\" 1.25rem;\n    grid-auto-flow: row;\n    animation-name: pulse;\n    animation-duration: 0.4s;\n    animation-iteration-count: 1;\n    animation-timing-function: ease-in-out;\n}\n\n@keyframes pulse {\n    0% {\n        background-color: orange;\n    }\n    100% {\n        background-color: rgba(255, 255, 255, 0);\n    }\n}\n\n.card-title {\n    overflow: auto;\n    grid-area: title;\n}\n\n.card-move-count {\n    background-color: lightgray;\n    grid-area: count;\n}\n\n.card-delete-button {\n    grid-area: delete;\n}\n\n.card-history {\n    grid-column: span 2;\n    padding: 0.25rem 0.25rem 0;\n}\n\n.card-history.hidden {\n    display: none;\n}\n\n.card.dragging {\n    opacity: 0.5;\n    background-color: lightblue;\n}\n\n.card.warning {\n    background-color: pink;\n    animation-name: pulse-warning;\n}\n\n@keyframes pulse-warning {\n    0% {\n        background-color: orange;\n    }\n    100% {\n        background-color: pink;\n    }\n}\n\n.card.confirm_delete {\n    background-color: deeppink;\n    text-align: center;\n    display: flex;\n    flex-direction: column;\n    justify-content: space-around;\n}\n\n.card .card-confirm-title {\n    font-size: 1.5em;\n    font-weight: bold;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/clear_board/clear_board.css":
-/*!************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/clear_board/clear_board.css ***!
-  \************************************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/ClearBoard/ClearBoard.css":
+/*!**********************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/ClearBoard/ClearBoard.css ***!
+  \**********************************************************************************************************************************/
 /*! namespace exports */
 /*! export default [provided] [no usage info] [missing usage info prevents renaming] */
 /*! other exports [not provided] [no usage info] */
@@ -3619,16 +3627,16 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".clear_board {\n    display: inline-block;\n}\n\n.clear_board.clear_board-confirming {\n    background-color: deeppink;\n    padding: 0.75em;\n    border-radius: 1em;\n    text-align: center;\n}\n\n.clear_board-confirm-title {\n    margin-bottom: 0.5em;\n}", "",{"version":3,"sources":["webpack://./src/components/clear_board/clear_board.css"],"names":[],"mappings":"AAAA;IACI,qBAAqB;AACzB;;AAEA;IACI,0BAA0B;IAC1B,eAAe;IACf,kBAAkB;IAClB,kBAAkB;AACtB;;AAEA;IACI,oBAAoB;AACxB","sourcesContent":[".clear_board {\n    display: inline-block;\n}\n\n.clear_board.clear_board-confirming {\n    background-color: deeppink;\n    padding: 0.75em;\n    border-radius: 1em;\n    text-align: center;\n}\n\n.clear_board-confirm-title {\n    margin-bottom: 0.5em;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".clear_board {\n    display: inline-block;\n}\n\n.clear_board.clear_board-confirming {\n    background-color: deeppink;\n    padding: 0.75em;\n    border-radius: 1em;\n    text-align: center;\n}\n\n.clear_board-confirm-title {\n    margin-bottom: 0.5em;\n}", "",{"version":3,"sources":["webpack://./src/components/ClearBoard/ClearBoard.css"],"names":[],"mappings":"AAAA;IACI,qBAAqB;AACzB;;AAEA;IACI,0BAA0B;IAC1B,eAAe;IACf,kBAAkB;IAClB,kBAAkB;AACtB;;AAEA;IACI,oBAAoB;AACxB","sourcesContent":[".clear_board {\n    display: inline-block;\n}\n\n.clear_board.clear_board-confirming {\n    background-color: deeppink;\n    padding: 0.75em;\n    border-radius: 1em;\n    text-align: center;\n}\n\n.clear_board-confirm-title {\n    margin-bottom: 0.5em;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/column/column.css":
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/Column/Column.css":
 /*!**************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/column/column.css ***!
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/Column/Column.css ***!
   \**************************************************************************************************************************/
 /*! namespace exports */
 /*! export default [provided] [no usage info] [missing usage info prevents renaming] */
@@ -3650,17 +3658,17 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".column {\n    flex: 1;\n\n    display: flex;\n    flex-direction: column;\n}\n\n.column > .column-header {\n    padding: 0.5em;\n    background-color: lightgray;\n    color: black;\n    border: 1px solid black;\n    width: 100%;\n    text-align: center;\n    font-weight: bold;\n    flex-shrink: 0;\n}\n\n.column > .column-body > .column-card {\n    min-height: 7em;\n    max-height: 20em;\n    margin: 0.5em 0;\n    display: flex;\n}\n\n.column > .column-body > .column-card > .card {\n    flex: 1;\n}\n\n.column > .column-body {\n    flex: 1;\n    display: flex;\n    flex-direction: column;\n    border-left: 1px solid lightgray;\n    overflow: auto;\n}\n\n.column.hover {\n    background-color: lightgreen;\n}", "",{"version":3,"sources":["webpack://./src/components/column/column.css"],"names":[],"mappings":"AAAA;IACI,OAAO;;IAEP,aAAa;IACb,sBAAsB;AAC1B;;AAEA;IACI,cAAc;IACd,2BAA2B;IAC3B,YAAY;IACZ,uBAAuB;IACvB,WAAW;IACX,kBAAkB;IAClB,iBAAiB;IACjB,cAAc;AAClB;;AAEA;IACI,eAAe;IACf,gBAAgB;IAChB,eAAe;IACf,aAAa;AACjB;;AAEA;IACI,OAAO;AACX;;AAEA;IACI,OAAO;IACP,aAAa;IACb,sBAAsB;IACtB,gCAAgC;IAChC,cAAc;AAClB;;AAEA;IACI,4BAA4B;AAChC","sourcesContent":[".column {\n    flex: 1;\n\n    display: flex;\n    flex-direction: column;\n}\n\n.column > .column-header {\n    padding: 0.5em;\n    background-color: lightgray;\n    color: black;\n    border: 1px solid black;\n    width: 100%;\n    text-align: center;\n    font-weight: bold;\n    flex-shrink: 0;\n}\n\n.column > .column-body > .column-card {\n    min-height: 7em;\n    max-height: 20em;\n    margin: 0.5em 0;\n    display: flex;\n}\n\n.column > .column-body > .column-card > .card {\n    flex: 1;\n}\n\n.column > .column-body {\n    flex: 1;\n    display: flex;\n    flex-direction: column;\n    border-left: 1px solid lightgray;\n    overflow: auto;\n}\n\n.column.hover {\n    background-color: lightgreen;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".column {\n    flex: 1;\n\n    display: flex;\n    flex-direction: column;\n}\n\n.column > .column-header {\n    padding: 0.5em;\n    background-color: lightgray;\n    color: black;\n    border: 1px solid black;\n    width: 100%;\n    text-align: center;\n    font-weight: bold;\n    flex-shrink: 0;\n}\n\n.column > .column-body > .column-card {\n    min-height: 7em;\n    max-height: 20em;\n    margin: 0.5em 0;\n    display: flex;\n}\n\n.column > .column-body > .column-card > .card {\n    flex: 1;\n}\n\n.column > .column-body {\n    flex: 1;\n    display: flex;\n    flex-direction: column;\n    border-left: 1px solid lightgray;\n    overflow: auto;\n}\n\n.column.hover {\n    background-color: lightgreen;\n}", "",{"version":3,"sources":["webpack://./src/components/Column/Column.css"],"names":[],"mappings":"AAAA;IACI,OAAO;;IAEP,aAAa;IACb,sBAAsB;AAC1B;;AAEA;IACI,cAAc;IACd,2BAA2B;IAC3B,YAAY;IACZ,uBAAuB;IACvB,WAAW;IACX,kBAAkB;IAClB,iBAAiB;IACjB,cAAc;AAClB;;AAEA;IACI,eAAe;IACf,gBAAgB;IAChB,eAAe;IACf,aAAa;AACjB;;AAEA;IACI,OAAO;AACX;;AAEA;IACI,OAAO;IACP,aAAa;IACb,sBAAsB;IACtB,gCAAgC;IAChC,cAAc;AAClB;;AAEA;IACI,4BAA4B;AAChC","sourcesContent":[".column {\n    flex: 1;\n\n    display: flex;\n    flex-direction: column;\n}\n\n.column > .column-header {\n    padding: 0.5em;\n    background-color: lightgray;\n    color: black;\n    border: 1px solid black;\n    width: 100%;\n    text-align: center;\n    font-weight: bold;\n    flex-shrink: 0;\n}\n\n.column > .column-body > .column-card {\n    min-height: 7em;\n    max-height: 20em;\n    margin: 0.5em 0;\n    display: flex;\n}\n\n.column > .column-body > .column-card > .card {\n    flex: 1;\n}\n\n.column > .column-body {\n    flex: 1;\n    display: flex;\n    flex-direction: column;\n    border-left: 1px solid lightgray;\n    overflow: auto;\n}\n\n.column.hover {\n    background-color: lightgreen;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/create_card/create_card.css":
-/*!************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/create_card/create_card.css ***!
-  \************************************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/CreateCard/CreateCard.css":
+/*!**********************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/CreateCard/CreateCard.css ***!
+  \**********************************************************************************************************************************/
 /*! namespace exports */
 /*! export default [provided] [no usage info] [missing usage info prevents renaming] */
 /*! other exports [not provided] [no usage info] */
@@ -3681,16 +3689,16 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".create_card {\n    display: inline-block;\n    margin-right: 3em;\n}\n\n.create_card textarea {\n    height: 2em;\n    min-width: 17em;\n    vertical-align: middle;\n}\n\n.create_card button {\n    margin-left: 3em;\n}", "",{"version":3,"sources":["webpack://./src/components/create_card/create_card.css"],"names":[],"mappings":"AAAA;IACI,qBAAqB;IACrB,iBAAiB;AACrB;;AAEA;IACI,WAAW;IACX,eAAe;IACf,sBAAsB;AAC1B;;AAEA;IACI,gBAAgB;AACpB","sourcesContent":[".create_card {\n    display: inline-block;\n    margin-right: 3em;\n}\n\n.create_card textarea {\n    height: 2em;\n    min-width: 17em;\n    vertical-align: middle;\n}\n\n.create_card button {\n    margin-left: 3em;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".create_card {\n    display: inline-block;\n    margin-right: 3em;\n}\n\n.create_card textarea {\n    height: 2em;\n    min-width: 17em;\n    vertical-align: middle;\n}\n\n.create_card button {\n    margin-left: 3em;\n}", "",{"version":3,"sources":["webpack://./src/components/CreateCard/CreateCard.css"],"names":[],"mappings":"AAAA;IACI,qBAAqB;IACrB,iBAAiB;AACrB;;AAEA;IACI,WAAW;IACX,eAAe;IACf,sBAAsB;AAC1B;;AAEA;IACI,gBAAgB;AACpB","sourcesContent":[".create_card {\n    display: inline-block;\n    margin-right: 3em;\n}\n\n.create_card textarea {\n    height: 2em;\n    min-width: 17em;\n    vertical-align: middle;\n}\n\n.create_card button {\n    margin-left: 3em;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/estimator/estimator.css":
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/Estimator/Estimator.css":
 /*!********************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/estimator/estimator.css ***!
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/Estimator/Estimator.css ***!
   \********************************************************************************************************************************/
 /*! namespace exports */
 /*! export default [provided] [no usage info] [missing usage info prevents renaming] */
@@ -3712,16 +3720,16 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".estimator {\n    width: 100%;\n    height: 100%;\n    display: flex;\n    flex-direction: column;\n}\n\n.estimator > .estimator-columns {\n    display: flex;\n    flex-direction: row;\n    flex: 1;\n}\n", "",{"version":3,"sources":["webpack://./src/components/estimator/estimator.css"],"names":[],"mappings":"AAAA;IACI,WAAW;IACX,YAAY;IACZ,aAAa;IACb,sBAAsB;AAC1B;;AAEA;IACI,aAAa;IACb,mBAAmB;IACnB,OAAO;AACX","sourcesContent":[".estimator {\n    width: 100%;\n    height: 100%;\n    display: flex;\n    flex-direction: column;\n}\n\n.estimator > .estimator-columns {\n    display: flex;\n    flex-direction: row;\n    flex: 1;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".estimator {\n    width: 100%;\n    height: 100%;\n    display: flex;\n    flex-direction: column;\n}\n\n.estimator > .estimator-columns {\n    display: flex;\n    flex-direction: row;\n    flex: 1;\n}\n", "",{"version":3,"sources":["webpack://./src/components/Estimator/Estimator.css"],"names":[],"mappings":"AAAA;IACI,WAAW;IACX,YAAY;IACZ,aAAa;IACb,sBAAsB;AAC1B;;AAEA;IACI,aAAa;IACb,mBAAmB;IACnB,OAAO;AACX","sourcesContent":[".estimator {\n    width: 100%;\n    height: 100%;\n    display: flex;\n    flex-direction: column;\n}\n\n.estimator > .estimator-columns {\n    display: flex;\n    flex-direction: row;\n    flex: 1;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/loading/loading.css":
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/Loading/Loading.css":
 /*!****************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/loading/loading.css ***!
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/Loading/Loading.css ***!
   \****************************************************************************************************************************/
 /*! namespace exports */
 /*! export default [provided] [no usage info] [missing usage info prevents renaming] */
@@ -3743,16 +3751,16 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".loading-spinner {\n    width: 150px;\n    height: 150px;\n    background-color: rgba(0, 127, 0, 0.5);\n\n    position: absolute;\n    top: 0;\n    bottom: 0;\n    left: 0;\n    right: 0;\n\n    margin: auto;\n    animation: rotateplane 4s infinite ease-in-out;\n}\n\n@keyframes rotateplane {\n    0% {\n        transform: perspective(120px) rotateX(0deg) rotateY(0deg);\n        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)\n    }\n    50% {\n        transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);\n        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)\n    }\n    100% {\n        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);\n        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);\n    }\n}\n\n.loading > h1 {\n    width: 0;\n    height: 0;\n\n    position: absolute;\n    top: 0;\n    bottom: 0;\n    left: 0;\n    right: 0;\n\n    margin: auto;\n}", "",{"version":3,"sources":["webpack://./src/components/loading/loading.css"],"names":[],"mappings":"AAAA;IACI,YAAY;IACZ,aAAa;IACb,sCAAsC;;IAEtC,kBAAkB;IAClB,MAAM;IACN,SAAS;IACT,OAAO;IACP,QAAQ;;IAER,YAAY;IACZ,8CAA8C;AAClD;;AAEA;IACI;QACI,yDAAyD;QACzD;IACJ;IACA;QACI,8DAA8D;QAC9D;IACJ;IACA;QACI,iEAAiE;QACjE,yEAAyE;IAC7E;AACJ;;AAEA;IACI,QAAQ;IACR,SAAS;;IAET,kBAAkB;IAClB,MAAM;IACN,SAAS;IACT,OAAO;IACP,QAAQ;;IAER,YAAY;AAChB","sourcesContent":[".loading-spinner {\n    width: 150px;\n    height: 150px;\n    background-color: rgba(0, 127, 0, 0.5);\n\n    position: absolute;\n    top: 0;\n    bottom: 0;\n    left: 0;\n    right: 0;\n\n    margin: auto;\n    animation: rotateplane 4s infinite ease-in-out;\n}\n\n@keyframes rotateplane {\n    0% {\n        transform: perspective(120px) rotateX(0deg) rotateY(0deg);\n        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)\n    }\n    50% {\n        transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);\n        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)\n    }\n    100% {\n        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);\n        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);\n    }\n}\n\n.loading > h1 {\n    width: 0;\n    height: 0;\n\n    position: absolute;\n    top: 0;\n    bottom: 0;\n    left: 0;\n    right: 0;\n\n    margin: auto;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".loading-spinner {\n    width: 150px;\n    height: 150px;\n    background-color: rgba(0, 127, 0, 0.5);\n\n    position: absolute;\n    top: 0;\n    bottom: 0;\n    left: 0;\n    right: 0;\n\n    margin: auto;\n    animation: rotateplane 4s infinite ease-in-out;\n}\n\n@keyframes rotateplane {\n    0% {\n        transform: perspective(120px) rotateX(0deg) rotateY(0deg);\n        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)\n    }\n    50% {\n        transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);\n        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)\n    }\n    100% {\n        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);\n        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);\n    }\n}\n\n.loading > h1 {\n    width: 0;\n    height: 0;\n\n    position: absolute;\n    top: 0;\n    bottom: 0;\n    left: 0;\n    right: 0;\n\n    margin: auto;\n}", "",{"version":3,"sources":["webpack://./src/components/Loading/Loading.css"],"names":[],"mappings":"AAAA;IACI,YAAY;IACZ,aAAa;IACb,sCAAsC;;IAEtC,kBAAkB;IAClB,MAAM;IACN,SAAS;IACT,OAAO;IACP,QAAQ;;IAER,YAAY;IACZ,8CAA8C;AAClD;;AAEA;IACI;QACI,yDAAyD;QACzD;IACJ;IACA;QACI,8DAA8D;QAC9D;IACJ;IACA;QACI,iEAAiE;QACjE,yEAAyE;IAC7E;AACJ;;AAEA;IACI,QAAQ;IACR,SAAS;;IAET,kBAAkB;IAClB,MAAM;IACN,SAAS;IACT,OAAO;IACP,QAAQ;;IAER,YAAY;AAChB","sourcesContent":[".loading-spinner {\n    width: 150px;\n    height: 150px;\n    background-color: rgba(0, 127, 0, 0.5);\n\n    position: absolute;\n    top: 0;\n    bottom: 0;\n    left: 0;\n    right: 0;\n\n    margin: auto;\n    animation: rotateplane 4s infinite ease-in-out;\n}\n\n@keyframes rotateplane {\n    0% {\n        transform: perspective(120px) rotateX(0deg) rotateY(0deg);\n        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)\n    }\n    50% {\n        transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);\n        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)\n    }\n    100% {\n        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);\n        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);\n    }\n}\n\n.loading > h1 {\n    width: 0;\n    height: 0;\n\n    position: absolute;\n    top: 0;\n    bottom: 0;\n    left: 0;\n    right: 0;\n\n    margin: auto;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/main/main.css":
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/main/Main.css":
 /*!***********************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/main/main.css ***!
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/main/Main.css ***!
   \***********************************************************************************************************/
 /*! namespace exports */
 /*! export default [provided] [no usage info] [missing usage info prevents renaming] */
@@ -3774,7 +3782,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n    box-sizing: border-box;\n}\n\nhtml, body {\n    height: 100%;\n    padding: 0;\n    margin: 0;\n}\n\n#app {\n    height: 100%;\n    width: 100%;\n}", "",{"version":3,"sources":["webpack://./src/main/main.css"],"names":[],"mappings":"AAAA;IACI,sBAAsB;AAC1B;;AAEA;IACI,YAAY;IACZ,UAAU;IACV,SAAS;AACb;;AAEA;IACI,YAAY;IACZ,WAAW;AACf","sourcesContent":["* {\n    box-sizing: border-box;\n}\n\nhtml, body {\n    height: 100%;\n    padding: 0;\n    margin: 0;\n}\n\n#app {\n    height: 100%;\n    width: 100%;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n    box-sizing: border-box;\n}\n\nhtml, body {\n    height: 100%;\n    padding: 0;\n    margin: 0;\n}\n\n#app {\n    height: 100%;\n    width: 100%;\n}", "",{"version":3,"sources":["webpack://./src/main/Main.css"],"names":[],"mappings":"AAAA;IACI,sBAAsB;AAC1B;;AAEA;IACI,YAAY;IACZ,UAAU;IACV,SAAS;AACb;;AAEA;IACI,YAAY;IACZ,WAAW;AACf","sourcesContent":["* {\n    box-sizing: border-box;\n}\n\nhtml, body {\n    height: 100%;\n    padding: 0;\n    margin: 0;\n}\n\n#app {\n    height: 100%;\n    width: 100%;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -44916,7 +44924,7 @@ function validate(uuid) {
 /************************************************************************/
 /******/ 	// startup
 /******/ 	// Load entry module
-/******/ 	__webpack_require__("./src/main/main.jsx");
+/******/ 	__webpack_require__("./src/main/Main.jsx");
 /******/ 	// This entry module used 'exports' so it can't be inlined
 /******/ })()
 ;
