@@ -1,5 +1,5 @@
 const CONFIG = {
-    crossbar_uri: 'wss://demo.crossbar.io/ws',
+    crossbar_uri: 'wss://crossbar.bebs.net/ws',
     realm: 'realm1'
 };
 
